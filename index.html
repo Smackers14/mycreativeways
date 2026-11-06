@@ -77,6 +77,8 @@ body.vr{--acc:#D53302;}body.vg{--acc:#D4A017;}body.vs{--acc:#6a9e7e;}body.vb{--a
 .vrow{display:flex;align-items:center;gap:4px;}
 .vd{width:14px;height:14px;border-radius:50%;cursor:pointer;border:1.5px solid rgba(255,255,255,.25);transition:transform .25s,border-color .25s,box-shadow .25s;}
 .vd:hover{transform:scale(1.25);border-color:rgba(255,255,255,.8);}
+.vd{padding:0;}
+.vd:focus-visible{outline:2px solid #fff;outline-offset:2px;}
 .vd.on{border-color:#fff;transform:scale(1.2);box-shadow:0 0 0 2px rgba(255,255,255,.3);}
 .vd.r{background:#D53302;}.vd.g{background:#FCC560;}.vd.s{background:#A0CBAD;}.vd.b{background:#8FB1BE;}
 .vd-wrap{position:relative;}
@@ -712,10 +714,10 @@ body.light .theme-toggle:hover{background:rgba(0,0,0,.15);}
   <div class="mm-bottom">
     <div class="mm-vibes">
       <span class="mm-vibe-label">Vibe</span>
-      <div class="vd r on" onclick="sv('r',this)" role="button" aria-label="Red vibe"></div>
-      <div class="vd g" onclick="sv('g',this)" role="button" aria-label="Gold vibe"></div>
-      <div class="vd s" onclick="sv('s',this)" role="button" aria-label="Sage vibe"></div>
-      <div class="vd b" onclick="sv('b',this)" role="button" aria-label="Blue vibe"></div>
+      <button type="button" class="vd r on" onclick="sv('r',this)" aria-label="Red vibe"></button>
+      <button type="button" class="vd g" onclick="sv('g',this)" aria-label="Gold vibe"></button>
+      <button type="button" class="vd s" onclick="sv('s',this)" aria-label="Sage vibe"></button>
+      <button type="button" class="vd b" onclick="sv('b',this)" aria-label="Blue vibe"></button>
     </div>
     <button class="mm-theme-btn" onclick="toggleTheme()" id="mm-theme-btn">☀ Light Mode</button>
   </div>
@@ -759,10 +761,10 @@ body.light .theme-toggle:hover{background:rgba(0,0,0,.15);}
       <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">☀ Light</button>
       <div class="vd-wrap">
         <div class="vrow">
-          <div class="vd r on" onclick="sv('r',this)"></div>
-          <div class="vd g" onclick="sv('g',this)"></div>
-          <div class="vd s" onclick="sv('s',this)"></div>
-          <div class="vd b" onclick="sv('b',this)"></div>
+          <button type="button" class="vd r on" onclick="sv('r',this)" aria-label="Red vibe"></button>
+          <button type="button" class="vd g" onclick="sv('g',this)" aria-label="Gold vibe"></button>
+          <button type="button" class="vd s" onclick="sv('s',this)" aria-label="Sage vibe"></button>
+          <button type="button" class="vd b" onclick="sv('b',this)" aria-label="Blue vibe"></button>
         </div>
         <div class="pick-me">pick a vibe</div>
       </div>
