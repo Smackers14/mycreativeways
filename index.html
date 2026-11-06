@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mackenzie Kelly | Brand, Digital & Marketing | Vancouver, BC</title>
+<meta property="og:title" content="Mackenzie Kelly | Brand & Digital Designer | Vancouver, BC">
+<meta property="og:description" content="UX/UI design, branding, and social media marketing for small businesses and creative brands in Vancouver, BC.">
+<meta property="og:image" content="https://mycreativeways.ca/myself.webp">
+<meta property="og:url" content="https://mycreativeways.ca">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mycreativeways.ca/myself.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:'Raleway';src:url('Raleway-VariableFont_wght.ttf') format('truetype');font-weight:100 900;font-style:normal;}
+@font-face{font-family:'Raleway';src:url('Raleway-Italic-VariableFont_wght.ttf') format('truetype');font-weight:100 900;font-style:italic;}
+@font-face{font-family:'Ahsing';src:url('typogama-ahsing.otf') format('opentype');}
+@font-face{font-family:'Acumin';src:url('AcuminVariableConcept.otf') format('opentype');}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --red:#D53302;--gold:#FCC560;--sage:#A0CBAD;--blue:#8FB1BE;
+  --acc:#D53302;
+  --muted:rgba(255,255,255,0.72);
+  --border:rgba(255,255,255,0.26);
+  --glass-bg:rgba(255,255,255,0.18);
+  --glass-border:rgba(255,255,255,0.36);
+  --card-bg:rgba(255,255,255,0.16);
+  --glass-radius:34px;
+  --soft-radius:26px;
+  --pill-radius:999px;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Raleway',sans-serif;background:#0C012A;color:#fff;overflow-x:hidden;cursor:none;transition:background .6s,color .6s;}
+@keyframes accentSweep{0%{background-position:0% 100%;}100%{background-position:100% 0%;}}
+.hero-eyebrow,.slbl,.cey{background:linear-gradient(45deg,#D53302,#FCC560,#A0CBAD,#8FB1BE,#D53302,#FCC560);background-size:400% 400%;animation:accentSweep 6s linear infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700;}
+.edash{display:inline-block;width:28px;height:2px;border-radius:1px;background:linear-gradient(45deg,#D53302,#FCC560,#A0CBAD,#8FB1BE,#D53302,#FCC560);background-size:400% 400%;animation:accentSweep 6s linear infinite;vertical-align:middle;flex-shrink:0;}
+.hero-h1 em,.stitle em,.ch2 em,.svcs-cta-text em{background:linear-gradient(45deg,#D53302,#FCC560,#A0CBAD,#8FB1BE,#D53302,#FCC560);background-size:400% 400%;animation:accentSweep 6s linear infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic;font-weight:700;}
+body.vibe-locked .hero-eyebrow,body.vibe-locked .slbl,body.vibe-locked .cey{animation:none;background:var(--acc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+body.vibe-locked .edash{animation:none!important;background:var(--acc)!important;}
+body.vibe-locked .hero-h1 em,body.vibe-locked .stitle em,body.vibe-locked .ch2 em,body.vibe-locked .svcs-cta-text em{animation:none;background:var(--acc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+body.vr{--acc:#D53302;}body.vg{--acc:#D4A017;}body.vs{--acc:#6a9e7e;}body.vb{--acc:#5f8fa0;}
+#cur{position:fixed;width:7px;height:7px;background:var(--acc);border-radius:50%;pointer-events:none;z-index:9999;left:0;top:0;transform:translate(-50%,-50%);transition:width .3s,height .3s,background .3s;will-change:transform;}
+#cur-r{position:fixed;width:32px;height:32px;border:1px solid color-mix(in srgb,var(--acc) 40%,transparent);border-radius:50%;pointer-events:none;z-index:9998;left:0;top:0;transform:translate(-50%,-50%);transition:border-color .3s,width .3s,height .3s;will-change:transform;}
+.page{position:fixed;inset:0;transition:opacity .9s ease;overflow:hidden;}
+.page.gone{opacity:0;pointer-events:none;}
+#ep{z-index:10;}
+.ecenter{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:3;}
+.ewrap{animation:rise 1.2s cubic-bezier(.16,1,.3,1) .55s both;}
+.ebtn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:1.2rem;padding:1rem 3.5rem;background:rgba(255,255,255,.12);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.35);border-radius:var(--pill-radius);cursor:pointer;overflow:hidden;transition:transform .4s cubic-bezier(.16,1,.3,1),background .4s;}
+.ebtn::before{content:'';position:absolute;inset:0;background:rgba(255,255,255,.2);transform:translateX(-100%);transition:transform .5s cubic-bezier(.16,1,.3,1);}
+.ebtn:hover{transform:scale(1.03);background:rgba(255,255,255,.2);}
+.ebtn:hover::before{transform:translateX(0);}
+.elbl{position:relative;z-index:1;font-family:'Raleway',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.95);}
+.earr{position:relative;z-index:1;width:24px;height:1px;background:rgba(255,255,255,.7);transition:width .3s;}
+.earr::after{content:'';position:absolute;right:0;top:-3px;width:7px;height:7px;border-right:1px solid rgba(255,255,255,.7);border-top:1px solid rgba(255,255,255,.7);transform:rotate(45deg);}
+.ebtn:hover .earr{width:34px;}
+@keyframes rise{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+#mp{z-index:5;overflow-y:auto;overflow-x:hidden;background:transparent;}
+.nav{position:fixed;top:1rem;left:3rem;right:3rem;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 3rem;background:rgba(255,255,255,.22);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border:1px solid rgba(255,255,255,.38);border-radius:var(--pill-radius);z-index:9999;box-shadow:0 8px 40px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.35);}
+.nlogo{display:flex;align-items:baseline;gap:6px;cursor:pointer;}
+.nmain{font-family:'Raleway',sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;}
+.nlinks{display:flex;gap:2.5rem;list-style:none;}
+.nlinks a{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
+.nlinks a:hover{color:var(--acc);}
+.nright{display:flex;align-items:center;gap:.9rem;}
+.vrow{display:flex;align-items:center;gap:4px;}
+.vd{width:14px;height:14px;border-radius:50%;cursor:pointer;border:1.5px solid rgba(255,255,255,.25);transition:transform .25s,border-color .25s,box-shadow .25s;}
+.vd:hover{transform:scale(1.25);border-color:rgba(255,255,255,.8);}
+.vd.on{border-color:#fff;transform:scale(1.2);box-shadow:0 0 0 2px rgba(255,255,255,.3);}
+.vd.r{background:#D53302;}.vd.g{background:#FCC560;}.vd.s{background:#A0CBAD;}.vd.b{background:#8FB1BE;}
+.vd-wrap{position:relative;}
+.vd-wrap:hover .pick-me{opacity:1;transform:translateX(-50%) translateY(0);}
+.pick-me{position:absolute;bottom:-22px;left:50%;transform:translateX(-50%) translateY(4px);font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);white-space:nowrap;opacity:0;transition:opacity .3s,transform .3s;pointer-events:none;}
+.site-bg{position:fixed;inset:0;z-index:0;pointer-events:none;}
+.site-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.site-bg-fade{position:absolute;inset:0;background:rgba(8,5,15,.28);}
+.site-bg-grain{position:absolute;inset:0;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px;}
+#mp>*:not(.site-bg){position:relative;z-index:1;}
+#mp>.nav{position:fixed;top:1rem;left:3rem;right:3rem;z-index:9999;}
+.hero{min-height:92vh;display:flex;align-items:center;justify-content:center;padding:6rem 3rem 5rem;position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.12);}
+.hero-noise{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 80% 20%,rgba(213,51,2,.05) 0%,transparent 55%),radial-gradient(ellipse at 10% 80%,rgba(143,177,190,.06) 0%,transparent 50%);}
+.hero-layout{width:min(100%,1200px);display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch;}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:3rem;background:rgba(255,255,255,.1);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border:1px solid rgba(255,255,255,.22);border-radius:var(--glass-radius);box-shadow:0 24px 70px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.28);}
+.hero-right{border-radius:var(--glass-radius);overflow:hidden;padding:.8rem;background:rgba(255,255,255,.16);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.3);box-shadow:0 24px 70px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.28);}
+.hero-right img{width:100%;height:100%;display:block;object-fit:cover;object-position:center top;border-radius:calc(var(--glass-radius) - 10px);}
+.hero-eyebrow{font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
+.hero-h1{font-size:1rem;line-height:1;margin-bottom:1.75rem;color:#fff;text-align:center;white-space:nowrap;letter-spacing:.55em;text-transform:uppercase;font-style:italic;padding:1.1rem 2rem;background:rgba(255,255,255,.14);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,.28);border-radius:var(--glass-radius);box-shadow:0 24px 70px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.28);}
+.hero-bio{font-size:.84rem;line-height:1.85;color:var(--muted);margin-bottom:2rem;}
+.hero-bio p{margin-bottom:1rem;}
+.hero-bio p:last-of-type{margin-bottom:0;}
+.hero-bio strong{color:#fff;font-weight:400;}
+.hero-meta{display:flex;gap:0;margin-bottom:2rem;}
+.hm-item{padding:.65rem 1.5rem;background:rgba(255,255,255,.16);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-top:1px solid rgba(255,255,255,.3);border-bottom:1px solid rgba(255,255,255,.3);border-right:1px solid rgba(255,255,255,.22);box-shadow:0 24px 70px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.28);}
+.hm-item:first-child{border-left:1px solid rgba(255,255,255,.2);border-radius:var(--pill-radius) 0 0 var(--pill-radius);}
+.hm-item:last-child{border-right:1px solid rgba(255,255,255,.2);border-radius:0 var(--pill-radius) var(--pill-radius) 0;}
+.hm-label{font-size:.48rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:.3rem;text-align:center;}
+.hm-val{font-size:.9rem;color:#fff;text-align:center;}
+.hero-ctas{display:flex;gap:1rem;}
+.btn-p{padding:.9rem 2.2rem;background:var(--acc);color:#fff;font-family:'Raleway',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;border:none;border-radius:var(--pill-radius);cursor:pointer;transition:opacity .2s,transform .2s;}
+.btn-p:hover{opacity:.88;transform:translateY(-1px);}
+.btn-g{padding:.9rem 2.2rem;background:rgba(255,255,255,.12);color:#fff;font-family:'Raleway',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;border:1.5px solid rgba(255,255,255,.55);border-radius:var(--pill-radius);cursor:pointer;transition:all .2s;}
+.btn-g:hover{background:rgba(255,255,255,.22);border-color:#fff;}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.25rem;margin-bottom:2rem;}
+.tag{font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .7rem;border:.5px solid var(--border);color:var(--muted);border-radius:var(--pill-radius);transition:all .2s;cursor:default;}
+.tag:hover{border-color:var(--acc);color:var(--acc);}
+section{padding:5rem 3rem;border-top:1px solid rgba(255,255,255,.12);}
+.slbl{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:.65rem;display:flex;align-items:center;gap:.75rem;}
+.slbl::after{content:'';flex:1;height:.5px;background:rgba(255,255,255,.15);}
+.shd{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem;padding:1.35rem 1.5rem;background:rgba(255,255,255,.14);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid rgba(255,255,255,.26);border-radius:var(--glass-radius);box-shadow:0 24px 70px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.28);}
+.stitle{font-family:'Raleway',sans-serif;font-weight:300;font-size:clamp(2rem,3.5vw,2.8rem);color:#fff;line-height:1.1;}
+.scnt{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);}
+.pgrid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:auto;gap:6px;}
+.pc{position:relative;overflow:hidden;cursor:pointer;background:#1a1a2e;border-radius:var(--soft-radius);transition:opacity .3s,transform .3s;box-shadow:0 24px 70px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.28);}
+.pc:hover{transform:scale(1.01);}
+.pc-label{position:absolute;bottom:0;left:0;right:0;padding:1rem 1.25rem;background:rgba(255,255,255,.18);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-top:1px solid rgba(255,255,255,.32);border-radius:0 0 var(--soft-radius) var(--soft-radius);transition:transform .3s;}
+.pc:hover .pc-label{transform:translateY(2px);}
+.pc-cat{font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:.2rem;}
+.pc-title{font-family:'Raleway',sans-serif;font-style:italic;font-size:.8rem;font-weight:300;color:#fff;}
+.csec{text-align:center;position:relative;overflow:hidden;}
+.cbg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(213,51,2,.05) 0%,transparent 60%);pointer-events:none;}
+.cey{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.25rem;}
+.ch2{font-family:'Raleway',sans-serif;font-weight:300;font-size:clamp(2.2rem,4.5vw,3.8rem);line-height:1.05;color:#fff;margin-bottom:.75rem;}
+.csub{font-family:'Raleway',sans-serif;font-style:italic;font-size:1rem;color:rgba(255,255,255,.82);margin-bottom:2.5rem;line-height:1.6;}
+.cglass{display:inline-flex;flex-direction:column;align-items:center;gap:1.25rem;background:var(--glass-bg);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border:1px solid var(--glass-border);border-radius:var(--glass-radius);padding:3rem 5rem;box-shadow:0 24px 70px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.28);}
+.cdivider{width:100%;height:.5px;background:var(--border);margin:.25rem 0;}
+.cemail{font-family:'Raleway',sans-serif;font-style:italic;font-size:1.1rem;color:#fff;text-decoration:none;border-bottom:.5px solid var(--border);padding-bottom:3px;transition:all .2s;}
+.cemail:hover{border-color:var(--acc);color:var(--acc);}
+.cava{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.75);}
+footer{padding:1.25rem 3rem;border-top:.5px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);}
+.cs-modal{position:fixed;inset:0;z-index:500;display:none;overflow-y:auto;}
+.cs-header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 3rem;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.2);}
+.cs-close{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);color:#fff;font-size:1.1rem;width:2rem;height:2rem;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;line-height:1;}
+.cs-close:hover{background:rgba(255,255,255,.32);}
+.cs-body{max-width:1400px;margin:0 auto;padding:3rem 3rem 5rem;}
+.cs-meta{display:flex;gap:3rem;margin:2rem 0 2.5rem;flex-wrap:wrap;}
+.cs-meta-item>span:first-child{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.70);display:block;margin-bottom:.35rem;}
+.cs-meta-item>span:last-child{font-size:1rem;color:#fff;font-weight:600;}
+.cs-desc{font-size:1rem;line-height:1.9;color:#fff;margin-bottom:1.5rem;}
+.cs-label{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.70);margin:2rem 0 .6rem;display:block;}
+.cs-inner{max-width:820px;margin:0 auto;}
+.cs-quote{font-family:'Raleway',sans-serif;font-style:italic;font-size:1.4rem;color:#fff;padding:1.5rem 2rem;margin-bottom:1rem;border-left-width:2px;border-left-style:solid;}
+.cs-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem;}
+.cs-pillar{padding:1.5rem;border-radius:16px;}
+.cs-pillar-num{font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.5rem;}
+.cs-pillar-title{font-family:'Raleway',sans-serif;font-size:.9rem;margin-bottom:.4rem;}
+.cs-pillar-body{font-size:.75rem;color:rgba(255,255,255,.6);line-height:1.6;}
+.cs-proto-label{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:1rem;}
+.cs-what{margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1);}
+.proto-wrap{margin-top:2.5rem;text-align:center;}
+.proto-shell{display:inline-block;background:#0a0a0a;border-radius:52px;padding:14px;box-shadow:0 30px 80px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.1);margin-top:1rem;}
+.proto-shell-desk{display:inline-block;background:#1a1a1a;border-radius:20px;padding:14px;box-shadow:0 30px 80px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.1);margin-top:1rem;}
+.proto-link{display:block;margin-top:1rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:2px;width:fit-content;margin-left:auto;margin-right:auto;}
+/* PROJECT PANELS: case studies open inline below their card's row */
+/* cards with a style guide background show the guide's own logo, so the typed one is hidden */
+.pc-bg>*{display:none;}
+/* card covers: each cover fills its card. It is nudged up so the logo sits centred in the space above the
+   frosted label, as far as the image allows without leaving a gap. Covers are 16:9. */
+.pgrid>.pc{--lbl:60px;}
+.pc .pc-bg{width:100%;height:100%;background:var(--card) center/cover no-repeat;}
+/* browsers that understand card sized units nudge the cover up; older ones keep it centred */
+@supports (container-type:size){
+  .pgrid>.pc{container-type:size;}
+  .pc .pc-bg{--ih:max(100cqh,calc(100cqw * .5625));background-position:center max(calc(100cqh - var(--ih)),calc((100cqh - var(--lbl) - var(--ih)) / 2));}
+}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){.pgrid>.pc{--lbl:54px;}}
+.pgrid>.pc{contain:size;min-height:338px;scroll-margin-top:96px;}/* same height as the old 4 rows of 80px plus gaps */
+.cs-panel{scroll-margin-top:96px;grid-column:1/-1;display:none;grid-template-columns:minmax(0,1fr);grid-template-rows:0fr;opacity:0;border-radius:var(--soft-radius);overflow:hidden;overflow:clip;transition:grid-template-rows .55s cubic-bezier(.16,1,.3,1),opacity .45s ease;}
+.cs-panel.open{grid-template-rows:1fr;opacity:1;}
+.cs-panel-inner{min-height:0;overflow:hidden;overflow:clip;}
+.cs-panel .cs-header{position:relative;gap:1rem;}
+.cs-actions{display:flex;align-items:center;gap:.6rem;flex-shrink:0;}
+.cs-copy{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);color:#fff;font-family:'Raleway',sans-serif;font-size:.55rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:.5rem .95rem;border-radius:var(--pill-radius);cursor:pointer;white-space:nowrap;transition:background .2s;}
+.cs-copy:hover{background:rgba(255,255,255,.32);}
+.cs-sec-title{font-family:'Raleway',sans-serif;font-weight:300;font-size:1.5rem;color:#fff;margin:3rem 0 1rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1);}
+.cs-sec:first-child .cs-sec-title{margin-top:0;padding-top:0;border-top:none;}
+.cs-sec-title+.cs-label,.cs-sec-title+.cs-meta{margin-top:0;}
+.cs-links{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){
+  .pgrid>.pc{min-height:80px;}
+  .cs-panel .cs-header{padding:1rem;}
+  .cs-sec-title{font-size:1.25rem;margin-top:2.25rem;padding-top:1.5rem;}
+  .cs-links{flex-direction:column;align-items:center;gap:.25rem;}
+}
+/* CASE STUDY: written case study first, then the artifacts in a browser window */
+.cs-stack{display:flex;flex-direction:column;gap:2.5rem;}
+.cs-text{min-width:0;width:100%;max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:3.5rem;}
+.cs-text>.cs-sec{grid-column:1/-1;}
+/* artifacts windows use the full panel width; text sections and style guides stay at a readable 1040px */
+.cs-text>.cs-sec{width:100%;max-width:1040px;justify-self:center;}
+.cs-art>.art-guide{width:100%;max-width:1040px;align-self:center;}
+.cs-text>.cs-art{grid-column:1/-1;margin:1.75rem 0 .5rem;}
+.cs-text .cs-inner{max-width:none;margin:0;}
+.cs-text .cs-sec-title{margin:1.75rem 0 .85rem;padding-top:1.25rem;}
+.cs-text>.cs-sec:first-child .cs-sec-title{margin-top:0;padding-top:0;border-top:none;}
+.cs-text .cs-desc{max-width:78ch;margin-bottom:1rem;}
+.cs-text .cs-label{margin-top:1.25rem;}
+.cs-text .cs-meta{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:1rem 2rem;margin:0 0 1.25rem;}
+.cs-text .cs-pillars{margin-bottom:1.25rem;}
+.cs-product-list{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1rem;}
+.cs-art{min-width:0;display:flex;flex-direction:column;gap:1.5rem;}
+.art-live,.art-guide,.art-carousel{display:flex;flex-direction:column;gap:.75rem;padding:.9rem;background:rgba(255,255,255,.1);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid rgba(255,255,255,.22);border-radius:var(--soft-radius);box-shadow:0 24px 70px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.28);}
+.art-heading{font-family:'Raleway',sans-serif;font-weight:300;font-size:1.25rem;color:#fff;padding:.1rem .25rem 0;}
+.art-guide-img{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.18);}
+.art-guide-img img{display:block;width:100%;height:auto;}
+.art-carousel>.art-stage,.art-guide>.art-stage{border-radius:16px;border:1px solid rgba(255,255,255,.18);}
+/* Rently prototype: the phone is shown at real size in a taller window so it is big enough to tap through */
+#rently-modal .art-window .art-stage{aspect-ratio:auto;height:min(86vh,900px);height:min(86svh,900px);}
+.art-site-native .art-frame{width:100%;height:100%!important;transform:none;}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){#rently-modal .art-window .art-stage{height:min(78vh,720px);height:min(78svh,720px);}}
+/* Sonder artifacts sit on pure black */
+#sonder-modal .art-carousel .art-stage{background:#000;}
+.art-stage-empty{display:flex;align-items:center;justify-content:center;}
+.art-tabs{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;padding:2px;}
+.art-tabs::-webkit-scrollbar{display:none;}
+.art-tab{flex-shrink:0;min-height:36px;padding:.55rem 1rem;background:rgba(255,255,255,.12);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.26);border-radius:var(--pill-radius);color:rgba(255,255,255,.8);font-family:'Raleway',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:background .25s,border-color .25s,color .25s;}
+.art-tab:hover{background:rgba(255,255,255,.22);color:#fff;}
+.art-tab.on{background:var(--acc);border-color:var(--acc);color:#fff;}
+/* browser window */
+.art-window{border-radius:16px;overflow:hidden;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.24);box-shadow:0 30px 80px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.25);}
+.art-bar{display:flex;align-items:center;gap:1rem;padding:.6rem .9rem;background:rgba(255,255,255,.14);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.18);}
+.art-dots{display:flex;gap:6px;flex-shrink:0;}
+.art-dots i{display:block;width:11px;height:11px;border-radius:50%;}
+.art-dots i:nth-child(1){background:#D53302;}.art-dots i:nth-child(2){background:#FCC560;}.art-dots i:nth-child(3){background:#A0CBAD;}
+.art-url{flex:1;max-width:520px;margin:0 auto;padding:.35rem 1rem;border-radius:var(--pill-radius);background:rgba(8,5,15,.35);border:1px solid rgba(255,255,255,.14);font-size:.72rem;letter-spacing:.04em;color:rgba(255,255,255,.8);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.art-stage{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0d0818;touch-action:pan-y;}
+.art-track{display:flex;height:100%;transition:transform .5s cubic-bezier(.16,1,.3,1);}
+.art-slide{flex:0 0 100%;min-width:0;height:100%;display:flex;align-items:center;justify-content:center;padding:1.25rem;}
+.art-slide-site{padding:0;}
+.art-fig{width:100%;height:100%;display:flex;align-items:center;justify-content:center;margin:0!important;}
+.art-img,.art-video{width:100%;height:100%;object-fit:contain;display:block;}
+/* live sites render at desktop width (1440px) and are scaled to fit the window */
+.art-site{position:relative;width:100%;height:100%;overflow:hidden;background:#000;}
+.art-frame{position:absolute;top:0;left:0;width:1440px;height:900px;border:0;display:block;background:#000;transform:scale(var(--s,1));transform-origin:0 0;}
+.art-grid{width:100%;height:100%;display:grid;gap:.75rem;grid-auto-rows:minmax(0,1fr);}
+.art-grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+.art-grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.art-grid .zoom-img-wrap{min-height:0;display:flex;align-items:center;justify-content:center;margin:0!important;}
+.art-grid img{width:100%;height:100%;object-fit:contain;display:block;}
+/* style guides: tall documents, scrolled inside the window at a readable size and loaded when opened */
+.art-scroll{position:relative;width:100%;height:100%;overflow-y:auto;overscroll-behavior:contain;border-radius:12px;}
+.art-doc{display:block;width:100%;max-width:960px;min-height:100%;margin:0 auto;height:auto;}
+.art-slide:has(.art-scroll)::before{content:'Scroll to read';position:absolute;right:1.6rem;bottom:1.4rem;z-index:2;padding:.35rem .8rem;border-radius:var(--pill-radius);background:rgba(12,1,42,.6);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.25);color:#fff;font-family:'Raleway',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;pointer-events:none;}
+.art-slide:has(.art-scroll){position:relative;}
+/* "enlarge" hint on images that open in the lightbox */
+.cs-art .zoom-img-wrap{position:relative;}
+.cs-art .zoom-img-wrap::after{content:'Click to enlarge';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.96);padding:.55rem 1rem;border-radius:var(--pill-radius);background:rgba(12,1,42,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.3);color:#fff;font-family:'Raleway',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none;}
+.cs-art .zoom-img-wrap:hover::after{opacity:1;transform:translate(-50%,-50%) scale(1);}
+@media(hover:none){
+  .cs-art .zoom-img-wrap::after{display:none;}
+  .art-slide:has(.zoom-img-wrap),.art-guide>.art-stage{position:relative;}
+  .art-slide:has(.zoom-img-wrap)::after,.art-guide>.art-stage::after{content:'Tap to enlarge';position:absolute;bottom:.4rem;left:50%;transform:translateX(-50%);padding:.25rem .7rem;border-radius:var(--pill-radius);background:rgba(12,1,42,.6);border:1px solid rgba(255,255,255,.25);color:#fff;font-family:'Raleway',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;pointer-events:none;}
+}
+/* pages and posts sit side by side in one row, packed together and centred */
+.art-grid.art-row{display:flex;align-items:center;justify-content:center;gap:.75rem;}
+.art-row .zoom-img-wrap{height:100%;flex:0 1 auto;min-width:0;}
+.art-row img{width:auto;max-width:100%;height:100%;border-radius:6px;box-shadow:0 12px 40px rgba(0,0,0,.45);}
+.art-menu{width:100%;height:100%;position:relative;display:flex;flex-direction:column;}
+.art-menu #sonder-slider{flex:1;min-height:0;}
+.art-menu #sonder-slides{height:100%;}
+.art-menu #sonder-slides img{width:100%;height:100%;object-fit:contain;}
+.art-card{width:100%;max-width:640px;max-height:100%;overflow:auto;}
+.art-empty{max-width:320px;font-size:.9rem;line-height:1.7;color:rgba(255,255,255,.7);text-align:center;}
+.art-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.art-arrow{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.14);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s;}
+.art-arrow:hover{background:var(--acc);border-color:var(--acc);}
+.art-count{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.7);}
+.art-carousel.single .art-nav,.art-carousel.single .art-tabs{display:none;}
+.art-open{display:none;}
+@media(max-width:900px){
+  .cs-text{grid-template-columns:minmax(0,1fr);}
+  .cs-text>.cs-sec:nth-child(2) .cs-sec-title{margin-top:1.75rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.1);}
+  .art-open:not([hidden]){display:flex;align-items:center;justify-content:center;min-height:44px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;text-decoration:none;}
+}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){
+  .pgrid{grid-template-columns:minmax(0,1fr);}
+  .cs-panel{min-width:0;}
+  .cs-text .cs-meta{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;}
+  .cs-stack{gap:1.5rem;}
+  .art-live,.art-guide,.art-carousel{padding:.6rem;}
+  .art-heading{font-size:1.05rem;}
+  .cs-art{gap:1rem;}
+  .art-bar{padding:.45rem .6rem;gap:.6rem;}
+  .art-dots i{width:8px;height:8px;}
+  .art-url{font-size:.72rem;padding:.25rem .7rem;}
+  .art-slide{padding:.5rem;}
+  .art-slide-site{padding:0;}
+  .art-grid{gap:.4rem;}
+  .art-card{padding:1rem!important;}
+  .art-card>div:first-child{font-size:1rem!important;}
+  .art-card>div:nth-child(2){font-size:.8rem!important;line-height:1.6!important;}
+}
+#svcs-page{position:fixed;inset:0;overflow-y:auto;z-index:600;display:none;}
+.svcs-page-bg{position:fixed;inset:0;z-index:0;pointer-events:none;}
+.svcs-page-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.svcs-page-fade{position:absolute;inset:0;background:rgba(8,5,15,.5);}
+.svcs-body{position:relative;z-index:1;max-width:1100px;margin:0 auto;}
+.svcs-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-bottom:3.5rem;}
+.scard-lg{background:var(--card-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-border);border-radius:var(--soft-radius);padding:2.5rem 2rem;position:relative;overflow:hidden;transition:transform .3s;box-shadow:0 24px 70px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.28);}
+.scard-lg:hover{transform:translateY(-4px);}
+.scard-lg::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--acc);transform:scaleX(0);transition:transform .4s;transform-origin:left;}
+.scard-lg:hover::before{transform:scaleX(1);}
+.scard-lg .sc-num{font-size:3.5rem;font-weight:300;color:var(--border);line-height:1;margin-bottom:1.2rem;}
+.scard-lg .sc-title{font-size:1.3rem;font-weight:400;color:#fff;margin-bottom:.6rem;}
+.scard-lg .sc-body{font-size:.75rem;line-height:1.8;color:var(--muted);}
+.scard-lg .sc-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.2rem;}
+.scard-lg .sc-tag{font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;padding:.25rem .6rem;border:1px solid var(--border);border-radius:99px;color:var(--muted);}
+.svcs-cta{text-align:center;padding:3rem 0 1rem;}
+.svcs-cta-text{font-family:'Raleway',sans-serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:300;color:#fff;margin-bottom:1.5rem;line-height:1.3;}
+@keyframes vinylSpin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+#vinyl-player{position:fixed;bottom:2rem;right:2rem;z-index:8888;display:none;flex-direction:column;align-items:center;}
+#vinyl-disc{width:140px;height:140px;animation:vinylSpin 5s linear infinite;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+#vinyl-disc img{width:140px;height:140px;object-fit:contain;display:block;filter:drop-shadow(0 8px 24px rgba(0,0,0,.7));}
+.zoom-img-wrap{border-radius:12px;cursor:pointer;position:relative;overflow:hidden;}
+.zoom-img{width:100%;display:block;transition:opacity .2s;}
+.zoom-img-wrap:hover .zoom-img{opacity:.8;}
+.lightbox{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.93);display:flex;align-items:center;justify-content:center;cursor:zoom-out;animation:lbIn .25s ease;}
+@keyframes lbIn{from{opacity:0;}to{opacity:1;}}
+.lightbox img{max-width:90vw;max-height:90vh;max-height:90svh;border-radius:16px;object-fit:contain;box-shadow:0 40px 100px rgba(0,0,0,.6);}
+.lightbox.tall{display:block;overflow-y:auto;overscroll-behavior:contain;padding:4rem 1rem;}
+.lightbox.tall img{display:block;width:min(1000px,100%);max-width:none;max-height:none;margin:0 auto;}
+.lightbox.tall .lightbox-close{position:fixed;}
+.lightbox-close{position:absolute;top:1.5rem;right:1.5rem;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:1.4rem;width:2.5rem;height:2.5rem;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:1;}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){
+  .nav{left:.6rem;right:.6rem;padding:.7rem 1.1rem;}
+  .nlinks{display:none;}
+  .nmain{font-size:.95rem;}
+  .nright{gap:.4rem;}
+  .theme-toggle{font-size:.45rem;padding:.25rem .5rem;}
+  .hamburger{display:flex;}
+  .hero{min-height:100svh;padding:4.5rem .9rem 2rem;}
+  .hero-layout{grid-template-columns:1fr;gap:1rem;}
+  .hero-left{padding:1.25rem;}
+  .hero-right{height:240px;}
+  .hero-eyebrow{font-size:.6rem;gap:.5rem;}
+  .hero-h1{font-size:.68rem;letter-spacing:.3em;padding:.75rem 1rem;white-space:normal;line-height:1.4;}
+  .hero-bio{font-size:.76rem;line-height:1.7;margin-bottom:1.1rem;}
+  .hero-bio p{margin-bottom:.75rem;}
+  .hero-meta{flex-wrap:wrap;gap:.4rem;margin-bottom:1.2rem;}
+  .hm-grid{grid-template-columns:1fr 1fr;}
+  .hm-item{flex:1;min-width:calc(50% - .2rem);border-radius:var(--pill-radius)!important;border:1px solid rgba(255,255,255,.3)!important;padding:.65rem .8rem;}
+  .hm-val{font-size:.75rem;}
+  .hm-label{font-size:.4rem;}
+  .hero-tags{gap:.3rem;margin-bottom:1.1rem;}
+  .tag{font-size:.52rem;padding:.25rem .6rem;}
+  .hero-ctas{flex-direction:column;gap:.6rem;}
+  .btn-p,.btn-s{width:100%;text-align:center;justify-content:center;font-size:.58rem;}
+  section{padding:2.5rem 1rem;}
+  .slbl{font-size:.55rem;}
+  .shd{padding:1.5rem;}
+  .shd h2{font-size:1.7rem;}
+  .pgrid{grid-template-columns:1fr;}
+  .pc{grid-column:span 1!important;grid-row:span 1!important;}
+  .pc-label{padding:.7rem .9rem;}
+  .pc-title{font-size:.9rem;}
+  .pc-cat{font-size:.48rem;}
+  .svcs-cards{grid-template-columns:1fr;}
+  .scard-lg{padding:1.4rem;}
+  .scard-lg .sc-title{font-size:1.1rem;}
+  .scard-lg .sc-num{font-size:3rem;}
+  .cglass{padding:1.4rem;width:100%;}
+  .ch2{font-size:1.7rem;}
+  .csub{font-size:.78rem;}
+  .cemail{font-size:.78rem;word-break:break-all;padding:.5rem .9rem;}
+  footer{flex-wrap:wrap;gap:.4rem;padding:1rem;font-size:.58rem;}
+  .cs-body{padding:1.1rem 1rem 4rem;}
+  .cs-title{font-size:1.5rem;}
+  .cs-pillars{grid-template-columns:1fr;}
+  .cs-meta{flex-wrap:wrap;gap:.6rem;}
+  .cs-meta-item{font-size:.68rem;}
+  .cs-inner{margin-bottom:1.5rem;}
+  .cs-label{font-size:.52rem;}
+  .proto-shell{overflow-x:auto;}
+  .proto-shell iframe{width:280px!important;height:600px!important;}
+  .proto-shell-desk iframe{width:100%!important;height:220px!important;}
+  .proto-wrap>div>iframe,.proto-wrap iframe{height:440px!important;}
+  .cs-gallery{grid-template-columns:1fr!important;}
+  .zoom-img-wrap{margin-bottom:.5rem;}
+  .svcs-page-fade{padding:2.5rem 1rem;}
+  .svcs-cta-text{font-size:1.7rem;}
+  .sonder-arrow{width:30px;height:30px;font-size:.9rem;}
+  .enter-title{font-size:2rem;}
+  .enter-sub{font-size:.75rem;}
+  .ep-btn{font-size:.7rem;padding:.55rem 1.6rem;}
+  .reveal-left,.reveal-right{transform:translateY(30px);}
+}
+@media(max-width:480px){
+  .hero-h1{font-size:.58rem;letter-spacing:.22em;}
+  .shd h2{font-size:1.4rem;}
+  .ch2{font-size:1.4rem;}
+  .hero-right{height:200px;}
+  .cs-title{font-size:1.25rem;}
+  .hm-grid{grid-template-columns:1fr;}
+  .proto-wrap>div>iframe,.proto-wrap iframe{height:360px!important;}
+}
+@media(max-width:480px){
+  .hero-h1{font-size:.9rem;}
+  .shd h2{font-size:1.6rem;}
+  .ch2{font-size:1.6rem;}
+  .hero-right{height:260px;}
+  .hm-grid{grid-template-columns:1fr;}
+  .cs-title{font-size:1.5rem;}
+  .proto-shell iframe{width:260px!important;height:563px!important;}
+  .proto-wrap iframe{height:420px!important;}
+  .enter-title{font-size:1.8rem;}
+}
+/* LIGHT MODE */
+body.light{
+  --muted:rgba(0,0,0,0.68);
+  --border:rgba(0,0,0,0.18);
+  --glass-bg:rgba(255,255,255,0.5);
+  --glass-border:rgba(0,0,0,0.12);
+  --card-bg:rgba(255,255,255,0.45);
+  background:#d8cdc1;
+  color:#1a0a2e;
+}
+body.light .site-bg-fade{background:rgba(196,182,168,.5);}
+body.light .nav{background:rgba(255,255,255,.55);border-color:rgba(0,0,0,.12);box-shadow:0 8px 40px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.9);}
+body.light .nmain{color:#1a0a2e;}
+body.light .nlinks a{color:rgba(0,0,0,.68);}
+body.light .hamburger span{background:#1a0a2e;}
+body.light .hero-left{background:rgba(255,255,255,.45);border-color:rgba(0,0,0,.1);box-shadow:0 24px 70px rgba(0,0,0,.1),inset 0 1px 0 rgba(255,255,255,.9);}
+body.light .hero-right{background:rgba(255,255,255,.4);border-color:rgba(0,0,0,.1);}
+body.light .hero-h1{background:rgba(255,255,255,.45);border-color:rgba(0,0,0,.1);color:#1a0a2e;}
+body.light .hero-bio{color:rgba(0,0,0,.72);}
+body.light .hero-bio strong{color:#1a0a2e;}
+body.light .hm-item{background:rgba(255,255,255,.5);border-color:rgba(0,0,0,.1);}
+body.light .hm-val{color:#1a0a2e;}
+body.light .hm-label{color:rgba(0,0,0,.6);}
+body.light .tag{border-color:rgba(0,0,0,.2);color:rgba(0,0,0,.68);}
+body.light .shd{background:rgba(255,255,255,.45);border-color:rgba(0,0,0,.1);}
+body.light .stitle{color:#1a0a2e;}
+body.light .pc-label{background:rgba(255,255,255,.55);border-color:rgba(0,0,0,.1);}
+body.light .pc-cat{color:rgba(0,0,0,.62);}
+body.light .pc-title{color:#1a0a2e;}
+body.light .cglass{background:rgba(255,255,255,.5);border-color:rgba(0,0,0,.12);}
+body.light .ch2{color:#1a0a2e;}
+body.light .csub{color:rgba(0,0,0,.72);}
+body.light .cava{color:rgba(0,0,0,.72);}
+body.light .cemail{color:#1a0a2e;border-color:rgba(0,0,0,.2);}
+body.light .cdivider{background:rgba(0,0,0,.15);}
+body.light footer{background:rgba(255,255,255,.3);color:rgba(0,0,0,.6);}
+body.light .scard-lg{background:rgba(255,255,255,.45);border-color:rgba(0,0,0,.1);}
+body.light .scard-lg .sc-title{color:#1a0a2e;}
+body.light .scard-lg .sc-body{color:rgba(0,0,0,.72);}
+body.light .scard-lg .sc-num{color:rgba(0,0,0,.22);}
+body.light .svcs-page-fade{background:rgba(240,236,232,.8);}
+body.light .svcs-cta-text{color:#1a0a2e;}
+body.light section{border-top-color:rgba(0,0,0,.1);}
+body.light .slbl::after{background:rgba(0,0,0,.1);}
+
+/* THEME TOGGLE BUTTON */
+.theme-toggle{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;font-family:'Raleway',sans-serif;font-size:.55rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:.35rem .8rem;border-radius:var(--pill-radius);cursor:pointer;transition:all .3s;display:flex;align-items:center;gap:.4rem;}
+.theme-toggle:hover{background:rgba(255,255,255,.25);}
+body.light .theme-toggle{background:rgba(0,0,0,.08);border-color:rgba(0,0,0,.15);color:#1a0a2e;}
+body.light .theme-toggle:hover{background:rgba(0,0,0,.15);}
+
+#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#D53302,#FCC560,#A0CBAD,#8FB1BE);background-size:400% 100%;animation:accentSweep 4s linear infinite;z-index:99999;transition:width .08s linear;pointer-events:none;}
+/* REVEAL ANIMATIONS */
+.reveal-up{opacity:0;transform:translateY(40px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);}
+.reveal-scale{opacity:0;transform:scale(.94);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);}
+.reveal-up.in,.reveal-left.in,.reveal-right.in,.reveal-scale.in{opacity:1;transform:none;}
+.stagger-1{transition-delay:.1s;}.stagger-2{transition-delay:.2s;}.stagger-3{transition-delay:.3s;}.stagger-4{transition-delay:.4s;}.stagger-5{transition-delay:.5s;}
+.mm-bottom{display:flex;flex-direction:column;align-items:center;gap:1rem;margin-top:1rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.15);width:100%;}
+.mm-theme-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;font-family:'Raleway',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:.6rem 2rem;border-radius:var(--pill-radius);cursor:pointer;}
+.mm-vibes{display:flex;gap:1rem;align-items:center;}
+.mm-vibes .vd{width:22px;height:22px;}
+.mm-vibe-label{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.4);}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){
+  .theme-toggle{display:none;}
+  .vd-wrap{display:none;}
+  #cur,#cur-r{display:none;}
+  body{cursor:auto;}
+  .hamburger{display:flex;}
+}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
+.hamburger span{display:block;width:22px;height:2px;background:rgba(255,255,255,.8);border-radius:2px;transition:all .3s;}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(12,1,42,.97);z-index:9998;flex-direction:column;align-items:center;justify-content:center;gap:2rem;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-family:'Raleway',sans-serif;font-size:1.6rem;font-weight:700;color:rgba(255,255,255,.85);text-decoration:none;letter-spacing:.08em;text-transform:uppercase;transition:color .2s;}
+.mobile-menu a:hover{color:var(--acc);}
+.mm-bottom{position:absolute;bottom:2.5rem;left:0;right:0;display:flex;justify-content:center;}
+.mm-theme-btn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);font-family:'Raleway',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:.55rem 1.8rem;border-radius:var(--pill-radius);cursor:pointer;transition:all .2s;}
+.mm-theme-btn:hover{background:rgba(255,255,255,.18);color:#fff;}
+.mm-vibes{display:flex;gap:1rem;align-items:center;}
+.mm-vibes .vd{width:22px;height:22px;}
+.mm-vibe-label{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.4);}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){.hamburger{display:flex;}}
+/* CASE STUDY JUMP LINKS: a sticky row under each case study title so visitors can skip straight to a section */
+.cs-jump{position:sticky;top:var(--jump-top,96px);z-index:9;display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;padding:.7rem 3rem;background:rgba(10,8,24,.82);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.14);}
+.cs-jump::-webkit-scrollbar{display:none;}
+.cs-jump button{flex-shrink:0;min-height:36px;padding:.55rem 1rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);border-radius:var(--pill-radius);color:rgba(255,255,255,.82);font-family:'Raleway',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:background .25s,border-color .25s,color .25s;}
+.cs-jump button:hover{background:rgba(255,255,255,.22);color:#fff;}
+.cs-jump button.on{background:var(--acc);border-color:var(--acc);color:#fff;}
+.cs-jump .cs-jump-art{border-style:dashed;}
+.cs-jump .cs-jump-sep{flex-shrink:0;width:1px;margin:.3rem;background:rgba(255,255,255,.22);}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){
+  .cs-jump{padding:.55rem 1rem;}
+  .cs-jump button{min-height:44px;font-size:.72rem;padding:0 1rem;}
+}
+/* ===== RENTLY CASE STUDY ADDITIONS: research stats, competitive table, persona, style guide, user flow ===== */
+#rently-modal{--rt-rust:#7A2F00;--rt-espresso:#4B1E01;--rt-tan:#B8874A;--rt-forest:#3E4A32;--rt-bark:#2B2418;--rt-cream:#F3ECDE;--rt-stone:#ADA893;}
+#rently-modal .rt-stats,#rently-modal .rt-stat,#rently-modal .rt-comp,#rently-modal .rt-persona,#rently-modal .rt-flow,#rently-modal .rt-more summary,#rently-modal .rt-note{font-family:'Nunito',sans-serif;}
+#rently-modal .rt-note{font-size:.8rem;color:var(--rt-stone);margin:.75rem 0 1.25rem;line-height:1.6;}
+
+/* RENTLY RESEARCH: STAT CARDS */
+#rently-modal .rt-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.25rem 0 1rem;}
+#rently-modal .rt-stat{background:var(--rt-bark);border:1px solid rgba(184,135,74,.35);border-radius:16px;padding:1.5rem;color:var(--rt-cream);}
+#rently-modal .rt-stat-num{font-weight:700;font-size:2.4rem;line-height:1.1;color:var(--rt-cream);}
+#rently-modal .rt-bars{display:flex;gap:6px;margin:.85rem 0 .9rem;}
+#rently-modal .rt-bars i{flex:1;height:8px;border-radius:4px;background:rgba(173,168,147,.25);}
+#rently-modal .rt-bars i.on{background:var(--rt-tan);}
+#rently-modal .rt-stat-text{font-size:.95rem;line-height:1.5;color:var(--rt-cream);margin:0 0 1rem;}
+#rently-modal .rt-stat-label{font-size:.68rem;font-weight:700;letter-spacing:.12rem;text-transform:uppercase;color:var(--rt-stone);margin-bottom:.3rem;}
+#rently-modal .rt-stat-resp{font-size:.95rem;font-weight:700;line-height:1.4;color:var(--rt-tan);margin:0;}
+
+/* RENTLY RESEARCH: READ MORE TOGGLE */
+#rently-modal .rt-more{margin:0 0 1.5rem;border:1px solid rgba(173,168,147,.3);border-radius:12px;padding:0 1rem;}
+#rently-modal .rt-more summary{cursor:pointer;list-style:none;padding:.9rem 0;font-weight:700;font-size:.9rem;color:var(--rt-tan);display:flex;align-items:center;gap:.6rem;min-height:44px;}
+#rently-modal .rt-more summary::-webkit-details-marker{display:none;}
+#rently-modal .rt-more summary::before{content:'+';display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;border:1px solid var(--rt-tan);font-size:.9rem;line-height:1;}
+#rently-modal .rt-more[open] summary::before{content:'\2212';}
+#rently-modal .rt-more[open]{padding-bottom:1rem;}
+
+/* RENTLY RESEARCH: COMPETITIVE ANALYSIS TABLE */
+#rently-modal .rt-comp-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:16px;border:1px solid rgba(184,135,74,.3);background:var(--rt-bark);}
+#rently-modal .rt-comp{border-collapse:collapse;min-width:640px;width:100%;color:var(--rt-cream);font-size:.9rem;}
+#rently-modal .rt-comp th,#rently-modal .rt-comp td{padding:.85rem 1rem;text-align:center;border-bottom:1px solid rgba(173,168,147,.15);}
+#rently-modal .rt-comp thead th{font-size:.72rem;font-weight:700;letter-spacing:.08rem;text-transform:uppercase;color:var(--rt-stone);}
+#rently-modal .rt-comp tbody th{text-align:left;font-weight:400;color:var(--rt-cream);}
+#rently-modal .rt-comp thead th:first-child{text-align:left;}
+#rently-modal .rt-comp tbody tr:last-child th,#rently-modal .rt-comp tbody tr:last-child td{border-bottom:none;}
+#rently-modal .rt-comp .rt-col{background:rgba(184,135,74,.18);}
+#rently-modal .rt-comp thead .rt-col{background:var(--rt-tan);color:var(--rt-bark);}
+#rently-modal .rt-yes{color:var(--rt-tan);font-weight:700;font-size:1.1rem;}
+#rently-modal .rt-no{color:var(--rt-stone);opacity:.7;font-size:1rem;}
+#rently-modal .rt-limited{color:var(--rt-stone);font-size:.8rem;font-style:italic;}
+
+/* RENTLY: PERSONA */
+#rently-modal .rt-persona{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1fr);gap:1rem;margin:.5rem 0 1.25rem;}
+#rently-modal .rt-persona-card,#rently-modal .rt-persona-list{background:var(--rt-bark);border:1px solid rgba(184,135,74,.3);border-radius:16px;padding:1.5rem;color:var(--rt-cream);}
+#rently-modal .rt-persona-list{background:var(--rt-forest);border-color:rgba(173,168,147,.3);}
+#rently-modal .rt-persona-head{display:flex;align-items:center;gap:1rem;margin-bottom:1rem;}
+#rently-modal .rt-avatar{flex:0 0 auto;width:64px;height:64px;border-radius:50%;background:var(--rt-tan);color:var(--rt-bark);font-weight:700;font-size:1.35rem;display:flex;align-items:center;justify-content:center;}
+#rently-modal .rt-persona-name{font-weight:700;font-size:1.3rem;color:var(--rt-cream);}
+#rently-modal .rt-persona-meta{font-size:.85rem;color:var(--rt-stone);margin-top:.2rem;}
+#rently-modal .rt-persona-bio{font-size:.92rem;line-height:1.7;color:var(--rt-cream);margin:0 0 1rem;}
+#rently-modal .rt-persona-quote{margin:0;padding:.9rem 1.1rem;border-left:3px solid var(--rt-tan);background:rgba(184,135,74,.1);border-radius:0 10px 10px 0;font-style:italic;font-size:.95rem;line-height:1.6;color:var(--rt-cream);}
+#rently-modal .rt-list-title{font-weight:700;font-size:.75rem;letter-spacing:.12rem;text-transform:uppercase;color:var(--rt-tan);margin-bottom:.6rem;}
+#rently-modal .rt-persona-list ul{margin:0;padding-left:1.1rem;font-size:.9rem;line-height:1.75;color:var(--rt-cream);}
+
+/* RENTLY: STYLE GUIDE (Visual Identity) */
+#rently-modal .rt-guide{border-radius:16px;margin:.5rem 0 1.25rem;background:var(--rt-bark);}
+#rently-modal .rt-guide img{display:block;width:100%;height:auto;border-radius:16px;}
+
+/* RENTLY PROTOTYPE: USER FLOW */
+#rently-modal .rt-flow{list-style:none;margin:.5rem 0 0;padding:0;display:flex;align-items:stretch;gap:.5rem;}
+#rently-modal .rt-step{flex:1;min-width:0;background:var(--rt-bark);border:1px solid rgba(173,168,147,.3);border-radius:14px;padding:1rem .9rem;font-size:.88rem;font-weight:700;line-height:1.35;color:var(--rt-cream);display:flex;flex-direction:column;gap:.5rem;}
+#rently-modal .rt-step-num{width:26px;height:26px;border-radius:50%;border:1px solid var(--rt-stone);color:var(--rt-stone);font-size:.75rem;display:flex;align-items:center;justify-content:center;}
+#rently-modal .rt-step.rt-key{background:var(--rt-tan);border-color:var(--rt-tan);color:var(--rt-bark);}
+#rently-modal .rt-step.rt-key .rt-step-num{background:var(--rt-bark);border-color:var(--rt-bark);color:var(--rt-tan);}
+#rently-modal .rt-arrow{flex:0 0 auto;display:flex;align-items:center;color:var(--rt-tan);font-size:1.2rem;}
+
+@media(max-width:900px){
+  #rently-modal .rt-persona{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+  #rently-modal .rt-persona-card{grid-column:1/-1;}
+  #rently-modal .rt-flow{flex-direction:column;}
+  #rently-modal .rt-step{flex-direction:row;align-items:center;gap:.75rem;}
+  #rently-modal .rt-arrow{justify-content:center;transform:rotate(90deg);height:24px;}
+}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){
+  #rently-modal .rt-stats{grid-template-columns:minmax(0,1fr);}
+  #rently-modal .rt-stat{padding:1.25rem;}
+  #rently-modal .rt-stat-num{font-size:2rem;}
+  #rently-modal .rt-stat-label{font-size:.75rem;}
+  #rently-modal .rt-persona{grid-template-columns:minmax(0,1fr);}
+  #rently-modal .rt-persona-card,#rently-modal .rt-persona-list{padding:1.25rem;}
+}
+/* RENTLY MOBILE */
+#rently-modal .rently-2col{grid-template-columns:1fr 1fr;}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){
+  #rently-modal .rently-2col{grid-template-columns:1fr;}
+  #rently-modal .cs-quote{font-size:1rem!important;padding:1rem 1.25rem;}
+  #rently-modal .cs-header{padding:1rem;}
+  #rently-modal .cs-close{width:44px;height:44px;font-size:1.4rem;}
+  #rently-modal .cs-meta{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.25rem 0 1.5rem;}
+  #rently-modal .cs-desc{font-size:.92rem;line-height:1.75;}
+  #rently-modal .rently-findings{min-width:0!important;}
+  #rently-modal .rently-findings thead{display:none;}
+  #rently-modal .rently-findings tr{display:block;padding:.9rem 0;}
+  #rently-modal .rently-findings td{display:block;padding:.15rem 0!important;}
+  #rently-modal .rently-findings td:first-child{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6);}
+  #rently-modal .rently-findings td:nth-child(2){font-size:.95rem;font-weight:600;}
+  #rently-modal .rently-links{flex-direction:column;align-items:center;gap:.75rem!important;margin-top:1.5rem!important;}
+  #rently-modal .rently-links .proto-link:first-child{margin:0;padding:.9rem 1.8rem;border:1px solid rgba(255,255,255,.4);border-radius:999px;color:#fff;font-size:.72rem;}
+  #rently-modal .rently-links .proto-link{margin:0;}
+}
+/* MOBILE PASS: phones only, desktop untouched */
+@media (hover:none),(pointer:coarse){
+  #cur,#cur-r{display:none!important;}
+  body{cursor:auto;}
+}
+@media(max-width:768px),(pointer:coarse) and (max-height:500px){
+  /* nav: 44px tap targets without making the bar taller */
+  .nav{left:.6rem!important;right:.6rem!important;top:.6rem!important;padding:.55rem .6rem .55rem 1.1rem;}
+  .nlogo{padding:13px 0;margin:-13px 0;}
+  .hamburger{width:44px;height:44px;margin:-6px -4px -6px 0;align-items:center;justify-content:center;padding:0;}
+  .mobile-menu{gap:1rem;}
+  .mobile-menu a{font-size:1.4rem;padding:.6rem 1.5rem;min-height:44px;display:flex;align-items:center;}
+  .mm-bottom{flex-direction:column;align-items:center;gap:1.25rem;border-top:none;margin:0;padding:0;}
+  .mm-vibes{gap:.25rem;}
+  .mm-vibe-label{font-size:.7rem;margin-right:.5rem;}
+  .mm-vibes .vd{position:relative;width:24px;height:24px;margin:10px;}
+  .mm-vibes .vd::after{content:'';position:absolute;inset:-11px;border-radius:50%;}
+  .mm-theme-btn{min-height:44px;font-size:.7rem;}
+  /* services */
+  .svcs-body>div:first-child{margin-bottom:2rem!important;}
+  .svcs-body>div:first-child p{font-size:.88rem!important;}
+  .svcs-cards{gap:1rem;margin-bottom:2rem;}
+  .scard-lg .sc-num{font-size:2.4rem;margin-bottom:.8rem;}
+  .scard-lg .sc-body{font-size:.85rem;}
+  .scard-lg .sc-tag{font-size:.7rem;}
+  .svcs-cta{padding:1.5rem 0 .5rem;}
+  .svcs-cta-text{font-size:1.4rem;}
+  /* hero: photo first, then the text */
+  .hero{min-height:0;padding:4.75rem .9rem 2rem;}
+  .hero-right{order:-1;height:380px!important;padding:.6rem;}
+  .hero-right img{object-position:center 32%;}
+  .hero-left{padding:1.4rem 1.1rem;}
+  .hero-eyebrow{font-size:.7rem;letter-spacing:.08em;margin-bottom:1.1rem;}
+  .hero-eyebrow .edash{width:18px;}
+  .hero-h1{font-size:.75rem!important;letter-spacing:.24em!important;padding:.8rem 1rem;margin-bottom:1.25rem;}
+  .hero-bio{font-size:.85rem;line-height:1.75;}
+  .tags{gap:.35rem;margin:1rem 0 1.25rem;}
+  .tag{font-size:.7rem;padding:.3rem .65rem;}
+  .hm-label{font-size:.7rem;}
+  .hm-val{font-size:.8rem;}
+  .btn-p,.btn-g{width:100%;min-height:48px;font-size:.7rem;}
+  /* sections */
+  section{padding:2.25rem 1rem;}
+  .slbl{font-size:.7rem;}
+  .shd{padding:1.1rem 1.25rem;margin-bottom:1.5rem;}
+  .scnt{font-size:.7rem;}
+  /* project cards: tall enough that the logo clears the label */
+  .pgrid>.pc{min-height:150px;}
+  .pc>div:first-child{padding-bottom:58px;}
+  .pc-cat{font-size:.7rem;}
+  .pc-title{font-size:.82rem;}
+  /* case studies */
+  .cs-panel .cs-header{padding:.9rem 1rem;align-items:flex-start;}
+  .cs-panel .cs-header>div:first-child>div:first-child{font-size:.7rem!important;}
+  .cs-panel .cs-header>div:first-child>div:last-child{font-size:1.15rem!important;}
+  .cs-actions{gap:.4rem;}
+  .cs-copy{min-height:44px;font-size:.7rem;padding:0 .9rem;}
+  .cs-close,#rently-modal .cs-close{width:44px;height:44px;font-size:1.3rem;}
+  .cs-body{padding:1rem .75rem 3rem;}
+  .cs-sec-title{font-size:1.2rem;margin-top:1.75rem;padding-top:1.25rem;}
+  .cs-desc,#rently-modal .cs-desc{font-size:.95rem;line-height:1.7;margin-bottom:1.1rem;}
+  .cs-label{font-size:.7rem;margin-top:1.4rem;}
+  .cs-meta,#rently-modal .cs-meta{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:0 0 1.25rem;}
+  .cs-meta-item>span:first-child{font-size:.7rem;}
+  .cs-meta-item>span:last-child{font-size:.88rem;}
+  .cs-quote,#rently-modal .cs-quote{font-size:.9rem!important;padding:.75rem 1rem;letter-spacing:normal!important;}
+  .cs-pillar{padding:1.1rem;}
+  .cs-pillar-num{font-size:.7rem;}
+  .cs-pillar-body,.cs-pillar ul{font-size:.85rem!important;}
+  .cs-text [style*="font-size:.72rem"],.cs-text [style*="font-size:.55rem"],.cs-text [style*="font-size:.6rem"]{font-size:.72rem!important;}
+  .cs-text [style*="padding:1.25rem 1.5rem"],.cs-text [style*="padding:1rem 1.5rem"]{gap:1rem!important;padding:.9rem 1rem!important;}
+  .cs-links .proto-link{display:flex;align-items:center;min-height:44px;margin:0 auto;font-size:.75rem;}
+  .rently-findings tbody{font-size:.85rem!important;}
+  /* artifact carousel */
+  .art-tab{min-height:44px;font-size:.7rem;padding:0 1rem;}
+  .art-count{font-size:.7rem;}
+  /* contact and footer */
+  .cey{font-size:.7rem;}
+  .ch2{font-size:1.7rem!important;}
+  .csub{font-size:.85rem;margin-bottom:1.5rem;}
+  .cglass{padding:1.4rem 1rem;gap:.9rem;}
+  .cava{font-size:.7rem;text-align:center;}
+  .cemail{display:inline-flex;align-items:center;min-height:44px;padding:0 .5rem;font-size:.85rem;}
+  footer{font-size:.7rem;padding:1.1rem 1rem;}
+  footer a{display:inline-flex;align-items:center;min-height:44px;}
+}
+</style>
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-r"></div>
+<div id="scroll-progress"></div>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#" onclick="closeMobileMenu();goHome();return false;">About</a>
+  <a href="#" onclick="closeMobileMenu();scrollMP('port');return false;">Work</a>
+  <a href="#" onclick="closeMobileMenu();scrollMP('svcs');return false;">Services</a>
+  <a href="#" onclick="closeMobileMenu();scrollMP('con');return false;">Contact</a>
+  <div class="mm-bottom">
+    <div class="mm-vibes">
+      <span class="mm-vibe-label">Vibe</span>
+      <div class="vd r on" onclick="sv('r',this)" role="button" aria-label="Red vibe"></div>
+      <div class="vd g" onclick="sv('g',this)" role="button" aria-label="Gold vibe"></div>
+      <div class="vd s" onclick="sv('s',this)" role="button" aria-label="Sage vibe"></div>
+      <div class="vd b" onclick="sv('b',this)" role="button" aria-label="Blue vibe"></div>
+    </div>
+    <button class="mm-theme-btn" onclick="toggleTheme()" id="mm-theme-btn">☀ Light Mode</button>
+  </div>
+</div>
+
+<!-- ENTER SCREEN -->
+<div id="ep" class="page">
+  <div class="site-bg">
+    <video autoplay muted loop playsinline><source src="mycreativeways.mp4" type="video/mp4"></video>
+    <div class="site-bg-fade"></div>
+    <div class="site-bg-grain"></div>
+  </div>
+  <div class="ecenter">
+    <div class="ewrap">
+      <button class="ebtn" onclick="enterSite()">
+        <span class="elbl">Enter</span>
+        <div class="earr"></div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN SITE -->
+<div id="mp" class="page gone">
+  <div class="site-bg">
+    <video autoplay muted loop playsinline><source src="mycreativeways.mp4" type="video/mp4"></video>
+    <div class="site-bg-fade"></div>
+    <div class="site-bg-grain"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nlogo" onclick="goHome()">
+      <span class="nmain">MYCREATIVEWAYS</span>
+    </div>
+    <ul class="nlinks">
+      <li><a href="#" onclick="scrollMP('port');return false;">Work</a></li>
+      <li><a href="#" onclick="scrollMP('svcs');return false;">Services</a></li>
+      <li><a href="#" onclick="scrollMP('con');return false;">Contact</a></li>
+    </ul>
+    <div class="nright">
+      <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">☀ Light</button>
+      <div class="vd-wrap">
+        <div class="vrow">
+          <div class="vd r on" onclick="sv('r',this)"></div>
+          <div class="vd g" onclick="sv('g',this)"></div>
+          <div class="vd s" onclick="sv('s',this)"></div>
+          <div class="vd b" onclick="sv('b',this)"></div>
+        </div>
+        <div class="pick-me">pick a vibe</div>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="border-top:none;">
+    <div class="hero-noise"></div>
+    <div class="hero-layout">
+      <div class="hero-left reveal-left">
+        <div class="hero-eyebrow"><span class="edash"></span>Mackenzie Kelly &nbsp;·&nbsp; Vancouver, BC<span class="edash"></span></div>
+        <h1 class="hero-h1">"If not us, then who?"</h1>
+        <div class="hero-bio">
+          <p>I've always wanted to make things. Design just turned out to be how I do it.</p>
+          <p>I'm Mackenzie, a <strong>New Media Design and Web Development</strong> student at BCIT based in Vancouver, BC, with a focus on <strong>UX/UI research and design</strong>. I work with small businesses, creative brands, and anyone who wants their product or online presence to actually reflect who they are.</p>
+          <p>I design brand identities and manage social media for brands that care about the details. My eye for travel content shapes how I see things: I'm drawn to what feels real, and that shows up in everything I make.</p>
+          <p>Passionate, empathetic, and genuinely invested in the people I work with. If you're building something worth caring about, I'd love to be part of it.</p>
+          <div class="tags">
+            <span class="tag">UX/UI Design</span>
+            <span class="tag">Branding</span>
+            <span class="tag">Social Media</span>
+            <span class="tag">Travel Content</span>
+            <span class="tag">Portraits on Film</span>
+            <span class="tag">Music Festivals</span>
+            <span class="tag">Café Culture</span>
+            <span class="tag">SE Asia</span>
+            <span class="tag">South Africa</span>
+            <span class="tag">Europe</span>
+            <span class="tag">Vancouver, BC</span>
+          </div>
+        </div>
+        <div class="hero-meta">
+          <div class="hm-item">
+            <div class="hm-label">Focus</div>
+            <div class="hm-val">UX/UI · Branding · Social Media</div>
+          </div>
+          <div class="hm-item">
+            <div class="hm-label">Travels</div>
+            <div class="hm-val">SE Asia · Europe · South Africa · BC</div>
+          </div>
+        </div>
+        <div class="hero-ctas">
+          <button class="btn-p" onclick="scrollMP('port')">View Work</button>
+          <button class="btn-g" onclick="scrollMP('con')">Let's Talk</button>
+        </div>
+      </div>
+      <div class="hero-right reveal-right">
+        <img src="myself.webp" alt="Mackenzie Kelly">
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="port">
+    <div class="slbl reveal-up">Selected Work</div>
+    <div class="shd reveal-up stagger-1">
+      <h2 class="stitle">Portfolio &amp;<br><em>Creative Work</em></h2>
+      <span class="scnt">2026</span>
+    </div>
+    <div class="pgrid">
+
+      <div class="pc" id="rently" data-panel="rently-modal" style="--card:url('RentlyCard.webp');grid-column:span 12;grid-row:span 4;" onclick="toggleProject('rently')">
+        <div class="pc-bg">
+          <div style="text-align:center;">
+            <div style="font-family:'Raleway',sans-serif;font-weight:800;font-size:3.2rem;letter-spacing:.08em;color:#fff;">RENTLY</div>
+            <div style="font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:.4rem;">Community rental transparency platform</div>
+          </div>
+        </div>
+        <div class="pc-label"><div class="pc-cat">UX Research &amp; Design · Case Study</div><div class="pc-title">Rently: Fixing Rental Transparency in BC</div></div>
+      </div>
+
+      <!-- RENTLY CASE STUDY -->
+      <div id="rently-modal" class="cs-panel" style="background:rgba(10,16,24,.96);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);">
+      <div class="cs-panel-inner">
+        <div class="cs-header" style="background:rgba(28,60,90,.85);">
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.70);margin-bottom:.35rem;">UX Research &amp; Design · Case Study</div>
+            <div style="font-family:'Raleway',sans-serif;font-weight:700;font-size:1.4rem;letter-spacing:.10em;text-transform:uppercase;color:#fff;">Rently</div>
+          </div>
+          <div class="cs-actions">
+            <button class="cs-copy" onclick="copyProjectLink('rently',this)">Copy link</button>
+            <button class="cs-close" onclick="closeProject()" aria-label="Close">&#215;</button>
+          </div>
+        </div>
+        <div class="cs-body cs-stack">
+          <div class="cs-text">
+          <!-- RENTLY: OVERVIEW -->
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Overview</h3>
+              <div class="cs-meta">
+                <div class="cs-meta-item"><span>Type</span><span>Community Rental Platform</span></div>
+                <div class="cs-meta-item"><span>Location</span><span>Metro Vancouver, BC</span></div>
+              </div>
+              <p class="cs-desc">Rently is a community rental platform where renters share verified, anonymous reviews of buildings and landlords, including the true monthly cost. It gives renters across Metro Vancouver the information listings leave out, so they can sign a lease with confidence.</p>
+            </div>
+          </div>
+          <aside class="cs-art" aria-label="Project artifacts">
+            <!-- ARTIFACTS WINDOW: tabs in order Live Site or Prototype, Logo, Menu, Poster, Banner, Social, Ad, Reel. Rently's style guide is in the Visual Identity section. -->
+            <div class="art-carousel">
+              <h3 class="art-heading">Prototype</h3>
+              <div class="art-tabs" role="tablist">
+                <button class="art-tab" type="button" role="tab">Prototype</button>
+              </div>
+              <div class="art-window" data-domain="rently.com">
+                <div class="art-bar">
+                  <span class="art-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="art-url">rently.com</span>
+                </div>
+                <div class="art-stage">
+                  <div class="art-track">
+                      <div class="art-slide art-slide-site" role="tabpanel" aria-label="Prototype" data-url="https://www.figma.com/proto/v2Tzt6D5bd0aQas8AV61IK/Rently-App?node-id=156-2"><div class="art-site art-site-native"><iframe class="art-frame" data-src="https://www.figma.com/embed?embed_host=share&scaling=contain&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fv2Tzt6D5bd0aQas8AV61IK%2FRently-App%3Fnode-id%3D156-2" title="Rently interactive prototype" allowfullscreen></iframe></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="art-nav">
+                <button class="art-arrow art-prev" type="button" aria-label="Previous artifact">&#8592;</button>
+                <span class="art-count"></span>
+                <button class="art-arrow art-next" type="button" aria-label="Next artifact">&#8594;</button>
+              </div>
+              <a class="art-open" href="#" target="_blank" rel="noopener" hidden>Open full site ↗</a>
+            </div>
+          </aside>
+          <!-- RENTLY: MY ROLE AND TOOLS (sits beside Overview) -->
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">My Role and Tools</h3>
+              <div class="cs-meta">
+                <div class="cs-meta-item"><span>Role</span><span>UX/UI Designer, Wireframes &amp; Presentation</span></div>
+                <div class="cs-meta-item"><span>Team</span><span>Polina, Bethia, Ayan (group project)</span></div>
+                <div class="cs-meta-item"><span>Tools</span><span>Figma</span></div>
+                <div class="cs-meta-item"><span>Methods</span><span>Survey · Competitive Analysis</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- RENTLY: THE PROBLEM -->
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">The Problem</h3>
+              <p class="cs-desc">Residents in British Columbia need a reliable way to understand what renting a specific home is really like: true monthly cost, landlord behaviour, and building condition. Current rental listings lack that transparency, and the gap leads to stressful, sometimes financially harmful rental experiences that better information could prevent.</p>
+              <span class="cs-label">User Context</span>
+              <p class="cs-desc">Canada is in a major housing crisis. Metro Vancouver's rental vacancy rate has ticked up to 3.7% (CMHC, 2025), but costs remain extremely high for students and young adults. Popular listing sites are built for landlords, which leaves renters short on the information that matters most.</p>
+              <ul style="margin:0 0 1.5rem 1.2rem;font-size:.85rem;line-height:1.9;color:#fff;">
+                <li><strong>Hidden expenses:</strong> advertised prices rarely include utilities.</li>
+                <li><strong>Misleading photos &amp; maintenance:</strong> listing photos hide real issues.</li>
+                <li><strong>One-sided background checks:</strong> landlords screen tenants, but tenants get no visibility into landlord responsiveness.</li>
+              </ul>
+              <span class="cs-label">The Opportunity</span>
+              <p class="cs-desc">Rently is a community-driven platform built to fix this: by letting renters share verified, honest reviews, Rently brings transparency to the rental market so people can make housing decisions with confidence.</p>
+            </div>
+          </div>
+          <!-- RENTLY: RESEARCH (stat cards, findings table in Read more, competitive analysis) -->
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Research</h3>
+              <span class="cs-label">How We Researched It</span>
+              <p class="cs-desc">We ran a short survey with 5 current renters across BC, mixing open and closed questions about rent history, hidden fees, trust, and what a transparency tool should look like. To widen the picture, we pulled real renter complaints from r/canadahousing, where people across the country talk openly about what went wrong. Small sample, but the patterns lined up closely with what we saw online.</p>
+
+              <!-- RENTLY RESEARCH: STAT CARDS -->
+              <div class="rt-stats">
+                <div class="rt-stat">
+                  <div class="rt-stat-num">3 of 5</div>
+                  <div class="rt-bars" role="img" aria-label="3 of 5 renters"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+                  <p class="rt-stat-text">hit a surprise fee after signing.</p>
+                  <div class="rt-stat-label">Design response</div>
+                  <p class="rt-stat-resp">Upfront True Cost Breakdown</p>
+                </div>
+                <div class="rt-stat">
+                  <div class="rt-stat-num">100%</div>
+                  <div class="rt-bars" role="img" aria-label="5 of 5 renters"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+                  <p class="rt-stat-text">comfortable sharing anonymously.</p>
+                  <div class="rt-stat-label">Design response</div>
+                  <p class="rt-stat-resp">Anonymous, verified rent reports</p>
+                </div>
+                <div class="rt-stat">
+                  <div class="rt-stat-num">4 of 5</div>
+                  <div class="rt-bars" role="img" aria-label="4 of 5 renters"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+                  <p class="rt-stat-text">would browse and contribute.</p>
+                  <div class="rt-stat-label">Design response</div>
+                  <p class="rt-stat-resp">Community powered data</p>
+                </div>
+              </div>
+
+              <!-- RENTLY RESEARCH: FULL FINDINGS TABLE (Read more toggle) -->
+              <details class="rt-more">
+                <summary>Read more: all research findings</summary>
+                <div style="overflow-x:auto;">
+                  <table class="rently-findings" style="width:100%;border-collapse:collapse;min-width:600px;">
+                    <thead><tr style="border-bottom:1px solid rgba(255,255,255,.2);">
+                      <th style="text-align:left;padding:.7rem .8rem;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);">Finding</th>
+                      <th style="text-align:left;padding:.7rem .8rem;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);">Data</th>
+                      <th style="text-align:left;padding:.7rem .8rem;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);">Design Insight</th>
+                    </tr></thead>
+                    <tbody style="font-size:.78rem;color:#fff;line-height:1.6;">
+                      <tr style="border-bottom:1px solid rgba(255,255,255,.08);"><td style="padding:.8rem;">Renter status</td><td style="padding:.8rem;">80% currently rent</td><td style="padding:.8rem;color:rgba(255,255,255,.75);">Most respondents have direct rental experience</td></tr>
+                      <tr style="border-bottom:1px solid rgba(255,255,255,.08);"><td style="padding:.8rem;">Overpaying concerns</td><td style="padding:.8rem;">2 of 5 felt they overpaid, 1 unsure</td><td style="padding:.8rem;color:rgba(255,255,255,.75);">Strong need for transparent pricing</td></tr>
+                      <tr style="border-bottom:1px solid rgba(255,255,255,.08);"><td style="padding:.8rem;">Undisclosed fees</td><td style="padding:.8rem;">3 of 5 hit a surprise fee after signing</td><td style="padding:.8rem;color:rgba(255,255,255,.75);">Need for an upfront True Cost Breakdown</td></tr>
+                      <tr style="border-bottom:1px solid rgba(255,255,255,.08);"><td style="padding:.8rem;">Anonymous sharing</td><td style="padding:.8rem;">100% comfortable anonymously</td><td style="padding:.8rem;color:rgba(255,255,255,.75);">Users will supply data if privacy is guaranteed</td></tr>
+                      <tr style="border-bottom:1px solid rgba(255,255,255,.08);"><td style="padding:.8rem;">Preferred search</td><td style="padding:.8rem;">Map and address search over a forum feed</td><td style="padding:.8rem;color:rgba(255,255,255,.75);">Informs the primary map toggle</td></tr>
+                      <tr style="border-bottom:1px solid rgba(255,255,255,.08);"><td style="padding:.8rem;">Participation</td><td style="padding:.8rem;">4 of 5 would browse and contribute</td><td style="padding:.8rem;color:rgba(255,255,255,.75);">Confirms willingness to keep data fresh</td></tr>
+                      <tr style="border-bottom:1px solid rgba(255,255,255,.08);"><td style="padding:.8rem;">When renters would check</td><td style="padding:.8rem;">3 of 5 would check at every stage, not just before signing</td><td style="padding:.8rem;color:rgba(255,255,255,.75);">Build for repeat visits, not one time lookups</td></tr>
+                      <tr><td style="padding:.8rem;">Review credibility</td><td style="padding:.8rem;">Specific details and multiple matching reviews</td><td style="padding:.8rem;color:rgba(255,255,255,.75);">Verified reports with rent, lease period, and fees</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+
+              <!-- RENTLY RESEARCH: COMPETITIVE ANALYSIS TABLE -->
+              <span class="cs-label">Competitive Analysis</span>
+              <div class="rt-comp-wrap">
+                <table class="rt-comp">
+                  <thead>
+                    <tr>
+                      <th scope="col">Feature</th>
+                      <th scope="col">Craigslist</th>
+                      <th scope="col">Zumper</th>
+                      <th scope="col">Facebook Marketplace</th>
+                      <th scope="col" class="rt-col">Rently</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Map based search</th><td><span class="rt-yes" role="img" aria-label="Yes">&#10003;</span></td><td><span class="rt-yes" role="img" aria-label="Yes">&#10003;</span></td><td><span class="rt-limited">Limited</span></td><td class="rt-col"><span class="rt-yes" role="img" aria-label="Yes">&#10003;</span></td></tr>
+                    <tr><th scope="row">True monthly cost</th><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td class="rt-col"><span class="rt-yes" role="img" aria-label="Yes">&#10003;</span></td></tr>
+                    <tr><th scope="row">Landlord reviews</th><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td class="rt-col"><span class="rt-yes" role="img" aria-label="Yes">&#10003;</span></td></tr>
+                    <tr><th scope="row">Building condition insights</th><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td class="rt-col"><span class="rt-yes" role="img" aria-label="Yes">&#10003;</span></td></tr>
+                    <tr><th scope="row">Verified anonymous renter reports</th><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td><span class="rt-no" role="img" aria-label="No">&#10005;</span></td><td class="rt-col"><span class="rt-yes" role="img" aria-label="Yes">&#10003;</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="rt-note">Based on our team's review of each platform.</p>
+            </div>
+          </div>
+          <!-- RENTLY: PERSONA -->
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Persona</h3>
+              <div class="rt-persona">
+                <div class="rt-persona-card">
+                  <div class="rt-persona-head">
+                    <div class="rt-avatar" aria-hidden="true">SL</div>
+                    <div>
+                      <div class="rt-persona-name">Sarah Lee</div>
+                      <div class="rt-persona-meta">24 · Burnaby, BC · Recent Grad</div>
+                    </div>
+                  </div>
+                  <p class="rt-persona-bio">A recent grad working full time, she just moved out of her family home to find her first apartment in Metro Vancouver. With the market this competitive, she wants to research every option before she commits, but the details she cares about most are scattered across Reddit and Facebook groups.</p>
+                  <blockquote class="rt-persona-quote">"Most listings leave out the details that actually matter: building issues, landlord reliability, hidden fees. I check Reddit and social media, but it's scattered across a dozen places instead of being in one."</blockquote>
+                </div>
+                <div class="rt-persona-list">
+                  <div class="rt-list-title">Goals</div>
+                  <ul>
+                    <li>Find a safe, reliable apartment.</li>
+                    <li>Know what a place is really like before moving in.</li>
+                    <li>Avoid unreliable landlords and surprise costs.</li>
+                    <li>Compare options using trustworthy info.</li>
+                    <li>Feel confident before signing a lease.</li>
+                  </ul>
+                </div>
+                <div class="rt-persona-list">
+                  <div class="rt-list-title">Needs</div>
+                  <ul>
+                    <li>Verified renter experiences.</li>
+                    <li>Reliable landlord info.</li>
+                    <li>Building condition insights.</li>
+                    <li>Rental history info.</li>
+                    <li>A safe platform to share and access reviews.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RENTLY: STYLE GUIDE (Visual Identity) -->
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Visual Identity</h3>
+              <p class="cs-desc">A warm, grounded palette inspired by Vancouver streets and old brick buildings, built to make renters feel safe and informed.</p>
+              <div class="rt-guide zoom-img-wrap"><img class="zoom-img" loading="lazy" src="Brand Boards-1.webp" width="1920" height="3740" alt="Rently style guide"></div>
+            </div>
+          </div>
+          <!-- RENTLY: PROTOTYPE (user flow; the Figma prototype embed is in the window below the text) -->
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Prototype</h3>
+              <!-- RENTLY PROTOTYPE: USER FLOW -->
+              <span class="cs-label">User Flow</span>
+              <ol class="rt-flow">
+                <li class="rt-step"><span class="rt-step-num">1</span>Browse the home feed</li>
+                <li class="rt-arrow" aria-hidden="true">&#8594;</li>
+                <li class="rt-step"><span class="rt-step-num">2</span>Search the map</li>
+                <li class="rt-arrow" aria-hidden="true">&#8594;</li>
+                <li class="rt-step"><span class="rt-step-num">3</span>Open a building</li>
+                <li class="rt-arrow" aria-hidden="true">&#8594;</li>
+                <li class="rt-step rt-key"><span class="rt-step-num">4</span>Check the true cost</li>
+                <li class="rt-arrow" aria-hidden="true">&#8594;</li>
+                <li class="rt-step rt-key"><span class="rt-step-num">5</span>Submit a rent report</li>
+              </ol>
+              <p class="rt-note">Built for repeat visits: 3 of 5 renters said they'd check Rently at every stage, not just before signing.</p>
+              <!-- WIREFRAMES: uncomment this text once rently-wireframes.png is added (the image goes in the Wireframes slide of the carousel).
+              <span class="cs-label">Wireframes</span>
+              <p class="cs-desc">I built the wireframes from the style guide Ayan created, working from low fidelity layouts up to the final screens.</p>
+              -->
+            </div>
+          </div>
+          <!-- RENTLY: TESTING -->
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Testing</h3>
+              <span class="cs-label">Usability Testing</span>
+              <p class="cs-desc">We put the prototype in front of renters and asked them to find a building, check its true monthly cost, and submit a rent report. Testers said the design felt polished enough to trust, which mattered for an app built on credibility. The listing cards and map filtering by rating and rent were the standouts. The noise meter was the weak spot: people couldn't tell what the segments meant. That's the first thing we'd redesign, likely with labels or a short scale explanation.</p>
+              <div class="cs-pillars rently-2col">
+                <div class="cs-pillar" style="background:rgba(28,60,90,.35);border:1px solid rgba(127,178,229,.3);">
+                  <div class="cs-pillar-num" style="color:#7fb2e5;">What Worked</div>
+                  <ul style="margin:.4rem 0 0 1.1rem;font-size:.75rem;line-height:1.8;color:rgba(255,255,255,.75);">
+                    <li>Polished design built trust</li>
+                    <li>Listing cards on the home page</li>
+                    <li>Map filtering by rating and rent</li>
+                  </ul>
+                </div>
+                <div class="cs-pillar" style="background:rgba(28,60,90,.35);border:1px solid rgba(127,178,229,.3);">
+                  <div class="cs-pillar-num" style="color:#7fb2e5;">What to Fix</div>
+                  <ul style="margin:.4rem 0 0 1.1rem;font-size:.75rem;line-height:1.8;color:rgba(255,255,255,.75);">
+                    <li>Noise meter segments were unclear</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RENTLY: WHAT I LEARNED -->
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">What I Learned</h3>
+              <p class="cs-desc">The most important design decision in Rently was making anonymity feel trustworthy rather than suspicious. Users were willing to share sensitive information about their landlords and rental costs, but only when the interface communicated clearly that their identity was protected. Privacy UI is just as important as the data architecture beneath it.</p>
+            </div>
+          </div>
+          <!-- RENTLY: LINKS -->
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Links</h3>
+              <div class="cs-links rently-links">
+                <a href="https://www.figma.com/proto/v2Tzt6D5bd0aQas8AV61IK/Rently-App?node-id=156-2" target="_blank" rel="noopener" class="proto-link">Open Prototype ↗</a>
+                <a href="https://www.figma.com/community/file/1681799153249806239" target="_blank" rel="noopener" class="proto-link">View in Figma Community ↗</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="pc" id="sonder" data-panel="sonder-modal" style="--card:url('Sonder card.webp');grid-column:span 12;grid-row:span 4;" onclick="toggleProject('sonder')">
+        <div class="pc-bg">
+          <div style="text-align:center;">
+            <div style="font-family:'Raleway',sans-serif;font-weight:300;font-size:2.8rem;letter-spacing:.12em;color:#f0e6d3;">Sonder</div>
+            <div style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:#c4501a;margin-top:.5rem;">coffee and bar</div>
+          </div>
+        </div>
+        <div class="pc-label"><div class="pc-cat">Social Media · Branding · Case Study</div><div class="pc-title">Sonder Coffee &amp; Bar: Social Strategy &amp; Ad Creative</div></div>
+      </div>
+
+      <!-- SONDER CASE STUDY -->
+      <div id="sonder-modal" class="cs-panel" style="background:rgba(20,8,4,.96);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);">
+      <div class="cs-panel-inner">
+        <div class="cs-header" style="background:rgba(196,80,26,.85);">
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.70);margin-bottom:.35rem;">Social Media · Branding · Case Study</div>
+            <div style="font-family:'Raleway',sans-serif;font-weight:300;font-size:1.4rem;letter-spacing:.12em;color:#fff;">Sonder Coffee &amp; Bar</div>
+          </div>
+          <div class="cs-actions">
+            <button class="cs-copy" onclick="copyProjectLink('sonder',this)">Copy link</button>
+            <button class="cs-close" onclick="closeProject()" aria-label="Close">&#215;</button>
+          </div>
+        </div>
+        <div class="cs-body cs-stack">
+          <div class="cs-text">
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Overview</h3>
+              <div class="cs-meta">
+                <div class="cs-meta-item"><span>Vertical</span><span>Hospitality · Local Business</span></div>
+                <div class="cs-meta-item"><span>Goal</span><span>Build community &amp; drive foot traffic</span></div>
+                <div class="cs-meta-item"><span>Type</span><span>Concept Work</span></div>
+              </div>
+              <p class="cs-desc">Sonder is a neighbourhood spot that’s a coffee shop by day and a cocktail bar by night. I built the brand from the ground up, including the identity, menus, website, event posters and social content, all designed to make one space feel like two different experiences without losing its warm, moody character.</p>
+            </div>
+          </div>
+          <aside class="cs-art" aria-label="Project artifacts">
+            <!-- ARTIFACTS WINDOW: tabs in order Live Site or Prototype, Logo, Menu, Poster, Banner, Social, Ad, Reel. The style guide sits on its own below. -->
+            <div class="art-carousel">
+              <h3 class="art-heading">Artifacts</h3>
+              <div class="art-tabs" role="tablist">
+                <button class="art-tab" type="button" role="tab">Live Site</button>
+                <button class="art-tab" type="button" role="tab">Menu</button>
+                <button class="art-tab" type="button" role="tab">Poster</button>
+                <button class="art-tab" type="button" role="tab">Social</button>
+                <button class="art-tab" type="button" role="tab">Instagram</button>
+                <button class="art-tab" type="button" role="tab">Ad</button>
+              </div>
+              <div class="art-window" data-domain="sonder.com">
+                <div class="art-bar">
+                  <span class="art-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="art-url">sonder.com</span>
+                </div>
+                <div class="art-stage">
+                  <div class="art-track">
+                      <div class="art-slide art-slide-site" role="tabpanel" aria-label="Live Site" data-url="https://sonder-coffee-bar.netlify.app"><div class="art-site"><iframe class="art-frame" data-src="https://sonder-coffee-bar.netlify.app" title="Sonder Coffee and Bar live site" style="background:#000;" allowfullscreen></iframe></div></div>
+                      <div class="art-slide" role="tabpanel" aria-label="Menu">
+                    <div class="art-grid art-row">
+                      <div class="zoom-img-wrap"><img loading="lazy" src="sonder menu-appetizerentrees.png" alt="Sonder appetizers and entrees menu"></div>
+                      <div class="zoom-img-wrap"><img loading="lazy" src="sonder menu-cocktail.png" alt="Sonder cocktail menu"></div>
+                      <div class="zoom-img-wrap"><img loading="lazy" src="sonder menu-beer.png" alt="Sonder beer menu"></div>
+                      <div class="zoom-img-wrap"><img loading="lazy" src="sonder menu-NA drinks.png" alt="Sonder non alcoholic drinks menu"></div>
+                      <div class="zoom-img-wrap"><img loading="lazy" src="sonder menu-desserts.png" alt="Sonder desserts menu"></div>
+                    </div>
+                  </div>
+                      <div class="art-slide" role="tabpanel" aria-label="Poster">
+                    <div class="art-fig zoom-img-wrap"><img class="art-img" loading="lazy" src="Vinyl Night Poster.webp" alt="Sonder Vinyl Night poster"></div>
+                  </div>
+                      <div class="art-slide" role="tabpanel" aria-label="Social">
+                    <div class="art-grid art-row">
+                      <div class="zoom-img-wrap"><img loading="lazy" src="Featur cocktail story.webp" alt="Sonder Winter Sour featured cocktail story"></div>
+                      <div class="zoom-img-wrap"><img loading="lazy" src="Sonder IG post with mockup.webp" alt="Sonder Instagram post shown in the feed"></div>
+                    </div>
+                  </div>
+                      <div class="art-slide" role="tabpanel" aria-label="Instagram">
+                    <div class="art-fig zoom-img-wrap"><img class="art-img" loading="lazy" src="sonder-1.webp" alt="Sonder Instagram profile mockup"></div>
+                  </div>
+                      <div class="art-slide" role="tabpanel" aria-label="Ad">
+                    <div class="art-fig zoom-img-wrap"><img class="art-img" loading="lazy" src="sonder IG post.webp" alt="Sonder ad: Your morning spot has a night side"></div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="art-nav">
+                <button class="art-arrow art-prev" type="button" aria-label="Previous artifact">&#8592;</button>
+                <span class="art-count"></span>
+                <button class="art-arrow art-next" type="button" aria-label="Next artifact">&#8594;</button>
+              </div>
+              <a class="art-open" href="#" target="_blank" rel="noopener" hidden>Open full site ↗</a>
+            </div>
+            <!-- STYLE GUIDE: on its own, full width, so visitors scroll through it with the page -->
+            <div class="art-guide">
+              <h3 class="art-heading">Style Guide</h3>
+              <div class="art-guide-img zoom-img-wrap"><img loading="lazy" src="Sonder.webp" width="1920" height="3240" alt="Sonder style guide"></div>
+            </div>
+          </aside>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">My Role and Tools</h3>
+              <div class="cs-meta">
+                <div class="cs-meta-item"><span>Role</span><span>UX/UI Designer</span></div>
+                <div class="cs-meta-item"><span>Tools</span><span>Figma · Canva</span></div>
+                <div class="cs-meta-item"><span>Deliverables</span><span>Strategy · UGC · Copywriting · Ad Creative</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">The Problem</h3>
+              <p class="cs-desc">[ADD: the problem]</p>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Process</h3>
+              <span class="cs-label">Strategy</span>
+              <p class="cs-desc">Content should feel like an invitation into a familiar spot, not an ad for a business. The strategy leans into Sonder's dual identity: the same space, completely different energy after 6.</p>
+              <div class="cs-pillars">
+                <div class="cs-pillar" style="background:rgba(196,80,26,.15);border:1px solid rgba(196,80,26,.3);">
+                  <div class="cs-pillar-num" style="color:#c4501a;">01</div>
+                  <div class="cs-pillar-title" style="color:#f0e6d3;">Daytime Ritual</div>
+                  <div class="cs-pillar-body">Coffee, quiet corners, regulars. The comfort of a familiar order.</div>
+                </div>
+                <div class="cs-pillar" style="background:rgba(196,80,26,.15);border:1px solid rgba(196,80,26,.3);">
+                  <div class="cs-pillar-num" style="color:#c4501a;">02</div>
+                  <div class="cs-pillar-title" style="color:#f0e6d3;">Evening Transformation</div>
+                  <div class="cs-pillar-body">Lighting shift, drink menu, music. The same space, completely different energy.</div>
+                </div>
+                <div class="cs-pillar" style="background:rgba(196,80,26,.15);border:1px solid rgba(196,80,26,.3);">
+                  <div class="cs-pillar-num" style="color:#c4501a;">03</div>
+                  <div class="cs-pillar-title" style="color:#f0e6d3;">Behind the Counter</div>
+                  <div class="cs-pillar-body">Baristas, bartenders, small moments. The human texture behind the brand.</div>
+                </div>
+              </div>
+              <span class="cs-label">UGC Concept</span>
+              <p class="cs-desc">A short filmed piece following one visit from a first coffee order in the morning through returning that same evening for a drink, showing the space's transformation. Framed as "a day at Sonder," not a product ad.</p>
+              <span class="cs-label">Copywriting</span>
+              <div class="cs-quote" style="border-color:#c4501a;">"Your 8am order knows you better than most people do."</div>
+              <div class="cs-quote" style="border-color:#c4501a;">"Same seat. Same corner. Completely different energy after 6."</div>
+              <div class="cs-quote" style="border-color:#c4501a;">"Not everything needs a name on the menu. Ask what's good tonight."</div>
+              <span class="cs-label">Ad Creative</span>
+              <p class="cs-desc">Banner set built for MDIA4016, tying the warm terracotta and navy brand palette to both the daytime and nighttime identity. Designed to run as a matched pair across a full day-part rotation.</p>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Results and Reflection</h3>
+              <span class="cs-label">What I Learned</span>
+              <p class="cs-desc">The dual identity of Sonder (coffee shop by day, bar by night) became the entire creative strategy. When a brand already has a natural narrative arc, the best content just follows it.</p>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Links</h3>
+              <div class="cs-links">
+                <a href="https://sonder-coffee-bar.netlify.app" target="_blank" rel="noopener" class="proto-link">Open Live Site ↗</a>
+                <a href="https://www.figma.com/community/file/1681798533433138077" target="_blank" rel="noopener" class="proto-link">View in Figma Community ↗</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="pc" id="dripped" data-panel="dripped-modal" style="--card:url('Dripped card.webp');grid-column:span 4;grid-row:span 4;" onclick="toggleProject('dripped')">
+        <div class="pc-bg">
+          <div style="text-align:center;">
+            <div style="font-family:'Raleway',sans-serif;font-weight:900;font-size:2.4rem;letter-spacing:.06em;background:linear-gradient(135deg,#c8c8d0,#7c3aed,#c8c8d0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Dripped</div>
+            <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#7c3aed;margin-top:.5rem;">fashion discovery app</div>
+          </div>
+        </div>
+        <div class="pc-label"><div class="pc-cat">Tech · Fashion App · Case Study</div><div class="pc-title">Dripped: App Awareness &amp; Ad Creative</div></div>
+      </div>
+
+      <!-- DRIPPED CASE STUDY -->
+      <div id="dripped-modal" class="cs-panel" style="background:rgba(6,4,12,.97);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);">
+      <div class="cs-panel-inner">
+        <div class="cs-header" style="background:rgba(124,58,237,.85);">
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.70);margin-bottom:.35rem;">Tech · Fashion App · Case Study</div>
+            <div style="font-family:'Raleway',sans-serif;font-weight:900;font-size:1.4rem;letter-spacing:.06em;color:#fff;">Dripped</div>
+          </div>
+          <div class="cs-actions">
+            <button class="cs-copy" onclick="copyProjectLink('dripped',this)">Copy link</button>
+            <button class="cs-close" onclick="closeProject()" aria-label="Close">&#215;</button>
+          </div>
+        </div>
+        <div class="cs-body cs-stack">
+          <div class="cs-text">
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Overview</h3>
+              <div class="cs-meta">
+                <div class="cs-meta-item"><span>Vertical</span><span>Tech · Fashion App</span></div>
+                <div class="cs-meta-item"><span>Goal</span><span>App awareness &amp; early downloads</span></div>
+                <div class="cs-meta-item"><span>Audience</span><span>Gen Z · Style-forward</span></div>
+                <div class="cs-meta-item"><span>Type</span><span>Concept Work</span></div>
+              </div>
+              <p class="cs-desc">Dripped is a location based fashion discovery app where users browse outfits posted nearby, upload their own looks and tap individual pieces to find them locally. It blends social media, style inspiration and shopping into one feed, with a bold chrome visual identity built to stand out to a style forward Gen Z audience.</p>
+            </div>
+          </div>
+          <aside class="cs-art" aria-label="Project artifacts">
+            <!-- ARTIFACTS WINDOW: tabs in order Live Site or Prototype, Logo, Menu, Poster, Banner, Social, Ad, Reel. The style guide sits on its own below. -->
+            <!-- ARTIFACTS: Dripped has no live site or other artifacts yet. To add some, copy the "art-carousel" block from another case study here. -->
+            <!-- STYLE GUIDE: on its own, full width, so visitors scroll through it with the page -->
+            <div class="art-guide">
+              <h3 class="art-heading">Style Guide</h3>
+              <div class="art-guide-img zoom-img-wrap"><img loading="lazy" src="Dripped.webp" width="1920" height="3240" alt="Dripped style guide"></div>
+            </div>
+          </aside>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">My Role and Tools</h3>
+              <div class="cs-meta">
+                <div class="cs-meta-item"><span>Role</span><span>UX/UI Designer</span></div>
+                <div class="cs-meta-item"><span>Tools</span><span>Figma · Canva</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">The Problem</h3>
+              <p class="cs-desc">[ADD: the problem]</p>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Process</h3>
+              <span class="cs-label">Strategy</span>
+              <div style="display:flex;flex-direction:column;gap:.75rem;margin-bottom:2rem;">
+                <div style="display:flex;align-items:center;gap:1.5rem;padding:1.25rem 1.5rem;background:rgba(124,58,237,.12);border:1px solid rgba(124,58,237,.25);border-radius:12px;">
+                  <div style="font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:#7c3aed;min-width:20px;">01</div>
+                  <div><div style="font-size:.9rem;color:#c8c8d0;">Outfit Discovery</div><div style="font-size:.72rem;color:rgba(255,255,255,.5);margin-top:.2rem;">Finding a look nearby: the core discovery moment.</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:1.5rem;padding:1.25rem 1.5rem;background:rgba(124,58,237,.12);border:1px solid rgba(124,58,237,.25);border-radius:12px;">
+                  <div style="font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:#7c3aed;min-width:20px;">02</div>
+                  <div><div style="font-size:.9rem;color:#c8c8d0;">Style Identity</div><div style="font-size:.72rem;color:rgba(255,255,255,.5);margin-top:.2rem;">Personal style, individuality. Your aesthetic, mapped.</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:1.5rem;padding:1.25rem 1.5rem;background:rgba(124,58,237,.12);border:1px solid rgba(124,58,237,.25);border-radius:12px;">
+                  <div style="font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:#7c3aed;min-width:20px;">03</div>
+                  <div><div style="font-size:.9rem;color:#c8c8d0;">Shop the Look</div><div style="font-size:.72rem;color:rgba(255,255,255,.5);margin-top:.2rem;">From inspiration to purchase, closing the loop locally.</div></div>
+                </div>
+              </div>
+              <span class="cs-label">UGC Concept</span>
+              <p class="cs-desc">A filmed app demo shot like a native phone screen recording layered with a real outfit reveal, showing someone spotting a look, tapping through the app, and finding where to get it locally. Framed as a discovery moment, not a tutorial.</p>
+              <span class="cs-label">Copywriting</span>
+              <div class="cs-quote" style="border-color:#7c3aed;font-size:1.2rem;">"Someone near you is wearing exactly what you didn't know you needed."</div>
+              <div class="cs-quote" style="border-color:#7c3aed;font-size:1.2rem;">"Your style, mapped."</div>
+              <div class="cs-quote" style="border-color:#7c3aed;font-size:1.2rem;">"Stop screenshotting outfits you'll never find again."</div>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Results and Reflection</h3>
+              <span class="cs-label">What I Learned</span>
+              <p class="cs-desc">Gen Z doesn't respond to ads that look like ads. The most effective creative for Dripped is content that looks like something a real user made: native, fast, and rooted in a genuine discovery moment.</p>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Links</h3>
+              <p class="cs-desc">[ADD: links]</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="pc" id="solene" data-panel="solene-modal" style="--card:url('SOLENA card.webp');grid-column:span 4;grid-row:span 4;" onclick="toggleProject('solene')">
+        <div class="pc-bg">
+          <div style="text-align:center;">
+            <div style="font-family:'Raleway',sans-serif;font-weight:200;font-size:2.8rem;letter-spacing:.3em;color:#f5ede0;">SOLENA</div>
+            <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#C2A884;margin-top:.5rem;">tofino spa</div>
+          </div>
+        </div>
+        <div class="pc-label"><div class="pc-cat">Branding · Web Design · Wellness · Case Study</div><div class="pc-title">SOLENA: A Coastal Spa in Tofino</div></div>
+      </div>
+
+      <!-- SOLENA CASE STUDY -->
+      <div id="solene-modal" class="cs-panel" style="background:rgba(22,25,21,.97);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);">
+      <div class="cs-panel-inner">
+        <div class="cs-header" style="background:rgba(107,122,102,.88);">
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.70);margin-bottom:.35rem;">Branding · Web Design · Wellness · Case Study</div>
+            <div style="font-family:'Raleway',sans-serif;font-weight:200;font-size:1.4rem;letter-spacing:.3em;text-transform:uppercase;color:#fff;">SOLENA</div>
+          </div>
+          <div class="cs-actions">
+            <button class="cs-copy" onclick="copyProjectLink('solene',this)">Copy link</button>
+            <button class="cs-close" onclick="closeProject()" aria-label="Close">&#215;</button>
+          </div>
+        </div>
+        <div class="cs-body cs-stack">
+          <div class="cs-text">
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Overview</h3>
+              <div class="cs-meta">
+                <div class="cs-meta-item"><span>Vertical</span><span>Wellness · Hospitality</span></div>
+                <div class="cs-meta-item"><span>Location</span><span>Tofino, BC</span></div>
+                <div class="cs-meta-item"><span>Type</span><span>Concept Work</span></div>
+              </div>
+              <p class="cs-desc">SOLENA is a coastal wellness spa in Tofino, offering sauna and hydrotherapy, massage, facials and body treatments inspired by the West Coast. I created the brand identity and a fully clickable website, from the service menu and booking flow to a take home product shop with a working cart and checkout. The visual direction is calm, earthy and natural, designed to feel like the rainforest and ocean that surround it.</p>
+            </div>
+          </div>
+          <aside class="cs-art" aria-label="Project artifacts">
+            <!-- ARTIFACTS WINDOW: tabs in order Live Site or Prototype, Logo, Menu, Poster, Banner, Social, Ad, Reel. The style guide sits on its own below. -->
+            <div class="art-carousel">
+              <h3 class="art-heading">Artifacts</h3>
+              <div class="art-tabs" role="tablist">
+                <button class="art-tab" type="button" role="tab">Live Site</button>
+                <button class="art-tab" type="button" role="tab">Menu</button>
+                <button class="art-tab" type="button" role="tab">Poster</button>
+                <button class="art-tab" type="button" role="tab">Social</button>
+                <button class="art-tab" type="button" role="tab">Reel</button>
+              </div>
+              <div class="art-window" data-domain="solena.com">
+                <div class="art-bar">
+                  <span class="art-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="art-url">solena.com</span>
+                </div>
+                <div class="art-stage">
+                  <div class="art-track">
+                      <div class="art-slide art-slide-site" role="tabpanel" aria-label="Live Site" data-url="https://solenaspa.netlify.app"><div class="art-site"><iframe class="art-frame" data-src="https://solenaspa.netlify.app" title="SOLENA live site" style="background:#000;" allowfullscreen></iframe></div></div>
+                      <div class="art-slide" role="tabpanel" aria-label="Menu">
+                    <div class="art-grid art-row">
+                      <div class="zoom-img-wrap"><img loading="lazy" src="Menu solena cover.webp" alt="SOLENA spa menu cover"></div>
+                      <div class="zoom-img-wrap"><img loading="lazy" src="Solena MENU 1.webp" alt="SOLENA menu page 1"></div>
+                      <div class="zoom-img-wrap"><img loading="lazy" src="Solena MENU 2.webp" alt="SOLENA menu page 2"></div>
+                      <div class="zoom-img-wrap"><img loading="lazy" src="Solena menu 3.webp" alt="SOLENA menu page 3"></div>
+                    </div>
+                  </div>
+                      <div class="art-slide" role="tabpanel" aria-label="Poster">
+                    <div class="art-fig zoom-img-wrap"><img class="art-img" loading="lazy" src="SOLENA AD.webp" alt="SOLENA brand poster"></div>
+                  </div>
+                      <div class="art-slide" role="tabpanel" aria-label="Social">
+                    <div class="art-grid art-row">
+                      <div class="zoom-img-wrap"><img loading="lazy" src="SOLENA IG.webp" alt="SOLENA Instagram profile mockup"></div>
+                      <div class="zoom-img-wrap"><img loading="lazy" src="SOLENA IG POST.webp" alt="SOLENA Instagram post mockup"></div>
+                      <div class="zoom-img-wrap"><img loading="lazy" src="SOLENA POSTS.webp" alt="SOLENA Instagram feed mockup"></div>
+                    </div>
+                  </div>
+                      <div class="art-slide" role="tabpanel" aria-label="Reel">
+                    <video class="art-video" controls loop playsinline preload="metadata">
+                      <source src="SOLENA REEL.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="art-nav">
+                <button class="art-arrow art-prev" type="button" aria-label="Previous artifact">&#8592;</button>
+                <span class="art-count"></span>
+                <button class="art-arrow art-next" type="button" aria-label="Next artifact">&#8594;</button>
+              </div>
+              <a class="art-open" href="#" target="_blank" rel="noopener" hidden>Open full site ↗</a>
+            </div>
+            <!-- STYLE GUIDE: on its own, full width, so visitors scroll through it with the page -->
+            <div class="art-guide">
+              <h3 class="art-heading">Style Guide</h3>
+              <div class="art-guide-img zoom-img-wrap"><img loading="lazy" src="Solena.webp" width="1920" height="3240" alt="SOLENA style guide"></div>
+            </div>
+          </aside>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">My Role and Tools</h3>
+              <div class="cs-meta">
+                <div class="cs-meta-item"><span>Role</span><span>Brand &amp; Web Designer</span></div>
+                <div class="cs-meta-item"><span>Tools</span><span>Figma · Anima · Canva · Netlify</span></div>
+                <div class="cs-meta-item"><span>Deliverables</span><span>Brand Identity · Website · Shop &amp; Checkout · Menu · Social · Reel</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">The Experience</h3>
+              <div class="cs-product-list">
+                <div style="display:flex;align-items:center;gap:1.5rem;padding:1rem 1.5rem;background:rgba(107,122,102,.12);border:1px solid rgba(194,168,132,.25);border-radius:12px;font-size:.85rem;color:#fff;"><span style="color:#C2A884;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;min-width:24px;">01</span>Sauna &amp; Hydrotherapy<span style="margin-left:auto;color:#C2A884;white-space:nowrap;">from $85</span></div>
+                <div style="display:flex;align-items:center;gap:1.5rem;padding:1rem 1.5rem;background:rgba(107,122,102,.12);border:1px solid rgba(194,168,132,.25);border-radius:12px;font-size:.85rem;color:#fff;"><span style="color:#C2A884;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;min-width:24px;">02</span>Massage<span style="margin-left:auto;color:#C2A884;white-space:nowrap;">from $140</span></div>
+                <div style="display:flex;align-items:center;gap:1.5rem;padding:1rem 1.5rem;background:rgba(107,122,102,.12);border:1px solid rgba(194,168,132,.25);border-radius:12px;font-size:.85rem;color:#fff;"><span style="color:#C2A884;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;min-width:24px;">03</span>Facials<span style="margin-left:auto;color:#C2A884;white-space:nowrap;">from $95</span></div>
+                <div style="display:flex;align-items:center;gap:1.5rem;padding:1rem 1.5rem;background:rgba(107,122,102,.12);border:1px solid rgba(194,168,132,.25);border-radius:12px;font-size:.85rem;color:#fff;"><span style="color:#C2A884;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;min-width:24px;">04</span>Body Treatments<span style="margin-left:auto;color:#C2A884;white-space:nowrap;">from $175</span></div>
+                <div style="display:flex;align-items:center;gap:1.5rem;padding:1rem 1.5rem;background:rgba(107,122,102,.12);border:1px solid rgba(194,168,132,.25);border-radius:12px;font-size:.85rem;color:#fff;"><span style="color:#C2A884;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;min-width:24px;">05</span>Take Home Product Line<span style="margin-left:auto;color:#C2A884;white-space:nowrap;">from $18</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">The Problem</h3>
+              <p class="cs-desc">Most spas sell an escape but look like a clinic: white walls, stock photos and a service menu that's hard to make sense of. In Tofino, spas compete on the view, but few build a brand around it. SOLENA needed to feel like the place itself: the forest, the cold water and the quiet.</p>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Process</h3>
+              <span class="cs-label">The Insight</span>
+              <p class="cs-desc">The setting is the product. Everything is built around one idea: a spa built into the forest, not the other way around. The copy, photography and layout all point back to the outdoors instead of the treatment room.</p>
+              <span class="cs-label">Visual Direction</span>
+              <p class="cs-desc">Where most spa brands lean bright and clinical, SOLENA uses the colours of the coast: sage green, deep forest olive, warm cream and soft tan, with an elegant serif and lots of space. Dark sections feel like the rainforest at dusk, and cream sections feel like a quiet morning.</p>
+              <span class="cs-label">The Website</span>
+              <p class="cs-desc">I designed the full site in Figma for desktop and mobile, then turned it into a responsive build and deployed it on Netlify so people can actually use it. Visitors can read the menu, book a time, and shop the take home line with a working cart and checkout.</p>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Results and Reflection</h3>
+              <span class="cs-label">Why It Works</span>
+              <p class="cs-desc">SOLENA doesn't sell a list of treatments. It sells a feeling of being somewhere, and every touchpoint from the menu to the checkout keeps that feeling going.</p>
+              <span class="cs-label">What I Learned</span>
+              <p class="cs-desc">Taking SOLENA from Figma to a live site showed me how much lives between the design and the build. Exact colour values, how text sits on each background and how a page behaves on different devices all decide whether it still feels premium once it's real.</p>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Links</h3>
+              <div class="cs-links">
+                <a href="https://solenaspa.netlify.app" target="_blank" rel="noopener" class="proto-link">Open Live Site ↗</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="pc" id="one-way-travel" data-panel="oneway-modal" style="--card:url('One way card.webp');grid-column:span 4;grid-row:span 4;" onclick="toggleProject('one-way-travel')">
+        <div class="pc-bg">
+          <div style="text-align:center;">
+            <div style="font-family:'Raleway',sans-serif;font-weight:700;font-size:2.2rem;letter-spacing:.06em;color:#fff;">one<span style="color:#4a9eff;">way</span></div>
+            <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:.5rem;">travel app</div>
+          </div>
+        </div>
+        <div class="pc-label"><div class="pc-cat">Travel · App Design · UX/UI · Case Study</div><div class="pc-title">Oneway: Travel App for Real Travellers</div></div>
+      </div>
+
+      <!-- ONEWAY CASE STUDY -->
+      <div id="oneway-modal" class="cs-panel" style="background:rgba(4,10,20,.97);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);">
+      <div class="cs-panel-inner">
+        <div class="cs-header" style="background:rgba(20,60,110,.85);">
+          <div>
+            <div style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.70);margin-bottom:.35rem;">Travel · App Design · UX/UI · Case Study</div>
+            <div style="font-family:'Raleway',sans-serif;font-weight:700;font-size:1.4rem;color:#fff;">one<span style="color:#4a9eff;">way</span></div>
+          </div>
+          <div class="cs-actions">
+            <button class="cs-copy" onclick="copyProjectLink('one-way-travel',this)">Copy link</button>
+            <button class="cs-close" onclick="closeProject()" aria-label="Close">&#215;</button>
+          </div>
+        </div>
+        <div class="cs-body cs-stack">
+          <div class="cs-text">
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Overview</h3>
+              <div class="cs-meta">
+                <div class="cs-meta-item"><span>Type</span><span>Travel App · Web &amp; Mobile</span></div>
+                <div class="cs-meta-item"><span>Audience</span><span>Solo travellers · Community seekers</span></div>
+              </div>
+              <p class="cs-desc">Oneway is a travel platform for people who want to explore the world and meet others doing the same. Users can discover destinations, book trips, see fellow travelers on a live map, join local meetups and connect with people along the way, all on the web and in a companion mobile app.</p>
+            </div>
+          </div>
+          <aside class="cs-art" aria-label="Project artifacts">
+            <!-- ARTIFACTS WINDOW: tabs in order Live Site or Prototype, Logo, Menu, Poster, Banner, Social, Ad, Reel. The style guide sits on its own below. -->
+            <div class="art-carousel">
+              <h3 class="art-heading">Artifacts</h3>
+              <div class="art-tabs" role="tablist">
+                <button class="art-tab" type="button" role="tab">Live Site</button>
+              </div>
+              <div class="art-window" data-domain="oneway.com">
+                <div class="art-bar">
+                  <span class="art-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="art-url">oneway.com</span>
+                </div>
+                <div class="art-stage">
+                  <div class="art-track">
+                      <div class="art-slide art-slide-site" role="tabpanel" aria-label="Live Site" data-url="https://onewaytravel.netlify.app"><div class="art-site"><iframe class="art-frame" data-src="https://onewaytravel.netlify.app" title="Oneway Travel live site" style="background:#0a1a2e;" allowfullscreen></iframe></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="art-nav">
+                <button class="art-arrow art-prev" type="button" aria-label="Previous artifact">&#8592;</button>
+                <span class="art-count"></span>
+                <button class="art-arrow art-next" type="button" aria-label="Next artifact">&#8594;</button>
+              </div>
+              <a class="art-open" href="#" target="_blank" rel="noopener" hidden>Open full site ↗</a>
+            </div>
+            <!-- STYLE GUIDE: on its own, full width, so visitors scroll through it with the page -->
+            <div class="art-guide">
+              <h3 class="art-heading">Style Guide</h3>
+              <div class="art-guide-img zoom-img-wrap"><img loading="lazy" src="Oneway travel.webp" width="1920" height="3240" alt="Oneway style guide"></div>
+            </div>
+          </aside>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">My Role and Tools</h3>
+              <div class="cs-meta">
+                <div class="cs-meta-item"><span>Role</span><span>UX/UI Designer</span></div>
+                <div class="cs-meta-item"><span>Tools</span><span>Figma · Canva</span></div>
+                <div class="cs-meta-item"><span>Deliverables</span><span>App Design · Web · Brand · Strategy</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">The Problem</h3>
+              <p class="cs-desc">It solves two problems that every solo traveller knows: not knowing if a place is actually worth visiting right now, and not knowing anyone when you get there.</p>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Process</h3>
+              <span class="cs-label">Marketing Angle</span>
+              <p class="cs-desc">Oneway's marketing is built around one insight: the best part of travel isn't the destination, it's the people you meet and the moments you didn't plan. Every piece of content leads with community and real experience.</p>
+              <div class="cs-pillars">
+                <div class="cs-pillar" style="background:rgba(74,158,255,.08);border:1px solid rgba(74,158,255,.2);">
+                  <div class="cs-pillar-num" style="color:#4a9eff;">01</div>
+                  <div class="cs-pillar-title" style="color:#fff;">Real Right Now</div>
+                  <div class="cs-pillar-body">UGC-style content showing real spots through the live map. No staged photography.</div>
+                </div>
+                <div class="cs-pillar" style="background:rgba(74,158,255,.08);border:1px solid rgba(74,158,255,.2);">
+                  <div class="cs-pillar-num" style="color:#4a9eff;">02</div>
+                  <div class="cs-pillar-title" style="color:#fff;">Find Your People</div>
+                  <div class="cs-pillar-body">Community stories: people who met through Oneway and ended up travelling together.</div>
+                </div>
+                <div class="cs-pillar" style="background:rgba(74,158,255,.08);border:1px solid rgba(74,158,255,.2);">
+                  <div class="cs-pillar-num" style="color:#4a9eff;">03</div>
+                  <div class="cs-pillar-title" style="color:#fff;">Go Somewhere New</div>
+                  <div class="cs-pillar-body">Destination content driven by the live map, showing places worth visiting right now.</div>
+                </div>
+              </div>
+              <span class="cs-label">Copywriting</span>
+              <div class="cs-quote" style="border-color:#4a9eff;">"Travel further. Arrive somewhere."</div>
+              <div class="cs-quote" style="border-color:#4a9eff;">"See it before you go. Know before you arrive."</div>
+              <div class="cs-quote" style="border-color:#4a9eff;">"Solo travel. Shared experience."</div>
+              <span class="cs-label">Key Features</span>
+              <div style="display:flex;flex-direction:column;gap:.75rem;margin-bottom:2rem;">
+                <div style="padding:1.5rem;background:rgba(74,158,255,.08);border:1px solid rgba(74,158,255,.2);border-radius:16px;">
+                  <div style="font-size:.95rem;color:#4a9eff;margin-bottom:.4rem;">Live Map: Is It Worth It Right Now?</div>
+                  <div style="font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.7;">An interactive map showing real-time photos posted by travellers at tourist spots. Posts expire after 24 hours, so you always see what a place actually looks like today. Each spot shows crowd-sourced yes/no answers: Is there clean drinking water? Are there washrooms? Real information, no wasted trips.</div>
+                </div>
+                <div style="padding:1.5rem;background:rgba(74,158,255,.08);border:1px solid rgba(74,158,255,.2);border-radius:16px;">
+                  <div style="font-size:.95rem;color:#4a9eff;margin-bottom:.4rem;">Swipe to Connect: Find Your People</div>
+                  <div style="font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.7;">A swipe-based matching feature for travellers in the same location. Swipe right on someone whose travel style matches yours and connect for a day trip, a meal, or just a coffee. Built like a dating app in its simplicity, but for friendship and community on the road.</div>
+                </div>
+                <div style="padding:1.5rem;background:rgba(74,158,255,.08);border:1px solid rgba(74,158,255,.2);border-radius:16px;">
+                  <div style="font-size:.95rem;color:#4a9eff;margin-bottom:.4rem;">Meetup Posts: Community Events</div>
+                  <div style="font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.7;">Travellers can post meetups: a hike, a beach day, a night out. Anyone in the area can see and join. Turns solo travel into a shared experience without the awkwardness of cold messaging strangers.</div>
+                </div>
+                <div style="padding:1.5rem;background:rgba(74,158,255,.08);border:1px solid rgba(74,158,255,.2);border-radius:16px;">
+                  <div style="font-size:.95rem;color:#4a9eff;margin-bottom:.4rem;">Booking: All in One Place</div>
+                  <div style="font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.7;">Flights, accommodation, and activities bookable within the app. Oneway is community first, booking second, but having it all in one place means you never have to leave the app.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Results and Reflection</h3>
+              <span class="cs-label">What I Learned</span>
+              <p class="cs-desc">The most interesting design challenge in Oneway is the tension between community and privacy: people want to connect with strangers while travelling, but they also don't want to feel unsafe. Every design decision around the swipe feature and meetup posts had to balance openness with enough friction to keep it feeling like a travel community, not something else.</p>
+            </div>
+          </div>
+          <div class="cs-sec">
+            <div class="cs-inner">
+              <h3 class="cs-sec-title">Links</h3>
+              <div class="cs-links">
+                <a href="https://onewaytravel.netlify.app" target="_blank" rel="noopener" class="proto-link">Open Live Site ↗</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="svcs">
+    <div class="svcs-body">
+      <div style="margin-bottom:3.5rem;">
+        <div class="slbl">What I Do</div>
+        <h2 class="stitle">Creative <em>Services</em></h2>
+        <p style="font-size:.85rem;line-height:1.8;color:var(--muted);max-width:520px;margin-top:1rem;">UX/UI design, brand identity, and social media strategy, built around people and the brands worth caring about.</p>
+      </div>
+      <div class="svcs-cards">
+        <div class="scard-lg">
+          <div class="sc-num">01</div>
+          <div class="sc-title">UX/UI Research &amp; Design</div>
+          <div class="sc-body">End-to-end product design: user research, wireframing, prototyping, and interface design grounded in real data.</div>
+          <div class="sc-tags"><span class="sc-tag">User Research</span><span class="sc-tag">Wireframing</span><span class="sc-tag">Prototyping</span><span class="sc-tag">UI Design</span></div>
+        </div>
+        <div class="scard-lg">
+          <div class="sc-num">02</div>
+          <div class="sc-title">Brand Identity &amp; Social Media</div>
+          <div class="sc-body">Visual identity, copywriting, social strategy, UGC concepts, and ad creative for brands that care about the details.</div>
+          <div class="sc-tags"><span class="sc-tag">Brand Identity</span><span class="sc-tag">Social Strategy</span><span class="sc-tag">Copywriting</span><span class="sc-tag">Ad Creative</span></div>
+        </div>
+        <div class="scard-lg">
+          <div class="sc-num">03</div>
+          <div class="sc-title">Music Festivals &amp; Events</div>
+          <div class="sc-body">Full creative ecosystem for live music and events: brand identity, poster design, event photography, and creative direction.</div>
+          <div class="sc-tags"><span class="sc-tag">Event Branding</span><span class="sc-tag">Photography</span><span class="sc-tag">Poster Design</span><span class="sc-tag">Creative Direction</span></div>
+        </div>
+        <div class="scard-lg">
+          <div class="sc-num">04</div>
+          <div class="sc-title">Café Culture &amp; Hospitality</div>
+          <div class="sc-body">Visual identity and atmosphere branding for coffee shops and hospitality spaces: menu design, editorial photography, and aesthetic direction.</div>
+          <div class="sc-tags"><span class="sc-tag">Visual Identity</span><span class="sc-tag">Menu Design</span><span class="sc-tag">Photography</span><span class="sc-tag">Hospitality</span></div>
+        </div>
+      </div>
+      <div class="svcs-cta">
+        <p class="svcs-cta-text">Ready to make something <em>worth remembering?</em></p>
+        <button class="btn-g" onclick="scrollMP('con')">Start a Conversation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="csec" id="con">
+    <div class="cbg"></div>
+    <div class="cey reveal-up">Let's create something</div>
+    <h2 class="ch2 reveal-up stagger-1">Start a <em>conversation.</em></h2>
+    <p class="csub reveal-up stagger-2">Available for UX/UI design, branding, social media, and creative direction.</p>
+    <div class="cglass reveal-scale stagger-3">
+      <div class="cava">Currently accepting projects for 2026</div>
+      <div class="cdivider"></div>
+      <a href="mailto:mackenziekelly@me.com" class="cemail">mackenziekelly@me.com</a>
+      <div class="cava">Vancouver, BC · Available worldwide</div>
+      <a href="https://www.linkedin.com/in/mackenzie-kelly-563529238/" target="_blank" rel="noopener" class="cemail" style="font-size:.72rem;font-style:normal;letter-spacing:.15em;text-transform:uppercase;">LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>mycreativeways © 2026</span>
+    <span>Vancouver, BC</span>
+    <span>Design · Branding · Social Media</span>
+    <a href="https://www.linkedin.com/in/mackenzie-kelly-563529238/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,.85)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">LinkedIn ↗</a>
+  </footer>
+
+</div>
+
+<!-- VINYL PLACEHOLDER - music coming soon -->
+
+<script>
+const isTouch=matchMedia('(pointer:coarse)').matches;
+const cur=document.getElementById('cur');
+const cr=document.getElementById('cur-r');
+if(isTouch){cur.style.display='none';cr.style.display='none';document.body.style.cursor='auto';}
+else{
+  let mx=0,my=0,rx=0,ry=0,looping=false;
+  document.addEventListener('mousemove',e=>{
+    mx=e.clientX;my=e.clientY;
+    cur.style.transform=`translate(${mx}px,${my}px) translate(-50%,-50%)`;
+    if(!looping){looping=true;requestAnimationFrame(trail);}
+  });
+  function trail(){
+    rx+=(mx-rx)*.12;ry+=(my-ry)*.12;
+    cr.style.transform=`translate(${rx}px,${ry}px) translate(-50%,-50%)`;
+    if(Math.abs(mx-rx)>.3||Math.abs(my-ry)>.3)requestAnimationFrame(trail);
+    else looping=false;
+  }
+  document.querySelectorAll('button,a,.pc,.vd,.tag,.scard-lg').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{cur.style.width='14px';cur.style.height='14px';cr.style.width='50px';cr.style.height='50px';});
+    el.addEventListener('mouseleave',()=>{cur.style.width='7px';cur.style.height='7px';cr.style.width='32px';cr.style.height='32px';});
+  });
+}
+
+function enterSite(){
+  if(enterSite._done)return;
+  enterSite._done=true;
+  const ep=document.getElementById('ep');
+  const mp=document.getElementById('mp');
+  ep.style.transition='opacity 0.9s ease';
+  ep.style.opacity='0';
+  setTimeout(()=>{
+    ep.style.display='none';
+    mp.style.opacity='0';
+    mp.style.transition='none';
+    mp.classList.remove('gone');
+    requestAnimationFrame(()=>{
+      mp.scrollTop=0;
+      requestAnimationFrame(()=>{
+        mp.style.transition='opacity 0.7s ease';
+        mp.style.opacity='1';
+        const vp=document.getElementById('vinyl-player');
+        if(vp)vp.style.display='flex';
+      });
+    });
+  },900);
+}
+
+function sv(v,dot){
+  document.body.classList.add('vibe-locked');
+  document.body.classList.remove('vr','vg','vs','vb');
+  if(v==='r')document.body.classList.add('vr');
+  else if(v==='g')document.body.classList.add('vg');
+  else if(v==='s')document.body.classList.add('vs');
+  else if(v==='b')document.body.classList.add('vb');
+  document.querySelectorAll('.vd').forEach(d=>d.classList.remove('on'));
+  document.querySelectorAll('.vd.'+v).forEach(d=>d.classList.add('on'));
+}
+document.addEventListener('DOMContentLoaded',()=>{ const d=document.querySelector('.vd.r'); if(d)sv('r',d); });
+
+// PROJECT PANELS: each card (#rently, #sonder…) opens its case study below its row
+const projCards=[...document.querySelectorAll('.pgrid>.pc')];
+projCards.forEach((c,i)=>c.style.order=i*2);
+let openSlug=null;
+function projPanel(slug){
+  const card=document.getElementById(slug);
+  return card&&card.dataset.panel?document.getElementById(card.dataset.panel):null;
+}
+function projectFromHash(){
+  const slug=decodeURIComponent(location.hash.slice(1));
+  return slug&&projPanel(slug)?slug:null;
+}
+function placePanel(slug){
+  // put the panel straight after the last card in the clicked card's row
+  const card=document.getElementById(slug);
+  let last=card;
+  projCards.forEach(c=>{if(c.offsetTop===card.offsetTop&&+c.style.order>+last.style.order)last=c;});
+  projPanel(slug).style.order=+last.style.order+1;
+}
+function openProject(slug,opts){
+  opts=opts||{};
+  const panel=projPanel(slug);
+  if(!panel)return;
+  const switching=!!openSlug&&openSlug!==slug;
+  if(switching)hideProject(openSlug,true);
+  openSlug=slug;
+  placePanel(slug);
+  panel.style.display='grid';
+  panel.offsetHeight;// reflow so the open transition runs
+  panel.classList.add('open');
+  panel.querySelectorAll('.art-slide.on').forEach(loadSlide);
+  if(opts.history!==false&&location.hash!=='#'+slug){
+    if(switching)history.replaceState(history.state,'','#'+slug);
+    else history.pushState({mcw:1},'','#'+slug);
+  }
+  if(opts.scroll!==false)scrollToProject(slug);
+}
+function scrollToProject(slug,toPanel){
+  closeAllModals();
+  const mp=document.getElementById('mp'),card=document.getElementById(slug);
+  const el=toPanel?projPanel(slug):card;
+  const nav=document.querySelector('#mp .nav'),gap=nav?nav.getBoundingClientRect().bottom+12:96;
+  // offsetTop ignores the cards' reveal transform, so the target is exact
+  const target=Math.max(0,el.offsetTop+el.offsetParent.offsetTop-gap);
+  mp.scrollTo({top:target,behavior:'smooth'});
+  // near the bottom of the page the panel has to grow before there is room to scroll that far
+  if(target>mp.scrollHeight-mp.clientHeight)setTimeout(()=>{if(openSlug===slug)mp.scrollTo({top:target,behavior:'smooth'});},600);
+}
+function hideProject(slug,instant,noScroll){
+  const panel=projPanel(slug);
+  if(!panel)return;
+  panel.classList.remove('open');
+  panel.querySelectorAll('video').forEach(v=>{if(!v.paused){v._auto=true;v.pause();}});
+  if(openSlug===slug)openSlug=null;
+  if(instant){panel.style.display='none';return;}
+  setTimeout(()=>{if(!panel.classList.contains('open'))panel.style.display='none';},560);
+  const card=document.getElementById(slug);
+  if(!noScroll&&card.getBoundingClientRect().top<0)scrollToProject(slug);
+}
+function closeProject(noScroll){
+  if(!openSlug)return;
+  hideProject(openSlug,false,noScroll);
+  if(!projectFromHash())return;
+  // step back over our own history entry, otherwise just clear the hash
+  if(history.state&&history.state.mcw)history.back();
+  else history.replaceState(history.state,'',location.pathname+location.search);
+}
+function toggleProject(slug){
+  if(openSlug===slug)closeProject();
+  else openProject(slug);
+}
+window.addEventListener('popstate',()=>{
+  const slug=projectFromHash();
+  if(slug){if(!enterSite._done)enterSite();if(slug!==openSlug)openProject(slug,{history:false});}
+  else if(openSlug)hideProject(openSlug);
+});
+window.addEventListener('resize',()=>{if(openSlug)placePanel(openSlug);});
+function copyProjectLink(slug,btn){
+  const url=location.href.split('#')[0]+'#'+slug;
+  const done=()=>{btn.textContent='Copied';setTimeout(()=>{btn.textContent='Copy link';},1800);};
+  const fallback=()=>{
+    const ta=document.createElement('textarea');
+    ta.value=url;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+    document.body.appendChild(ta);ta.select();ta.setSelectionRange(0,url.length);
+    try{document.execCommand('copy');}catch(e){}
+    document.body.removeChild(ta);done();
+  };
+  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(url).then(done,fallback);
+  else fallback();
+}
+
+function closeAllModals(){
+  document.querySelectorAll('.cs-modal').forEach(m=>m.style.display='none');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Escape')return;
+  // Escape closes an open enlarged image first, and only closes the project when nothing is enlarged
+  const lb=document.querySelector('.lightbox');
+  if(lb){lb.remove();return;}
+  closeAllModals();
+  closeProject();
+});
+
+// CASE STUDY JUMP LINKS: built from each case study's own headings, plus its live site or prototype and its artifacts
+(function(){
+  const mp=document.getElementById('mp');
+  const skip=['My Role and Tools','Links'];
+  function navBottom(){const n=document.querySelector('#mp .nav');return n?n.getBoundingClientRect().bottom:84;}
+  function setTop(){document.documentElement.style.setProperty('--jump-top',Math.round(navBottom()+8)+'px');}
+  setTop();addEventListener('resize',setTop);
+  document.querySelectorAll('.cs-panel').forEach(panel=>{
+    const header=panel.querySelector('.cs-header');if(!header)return;
+    const bar=document.createElement('nav');
+    bar.className='cs-jump';bar.setAttribute('aria-label','Jump to a section');
+    const items=[];
+    const live=panel.querySelector('.art-live'),carousel=panel.querySelector('.art-carousel');
+    if(live)items.push({el:live,label:live.querySelector('.art-heading').textContent.trim(),art:true});
+    if(carousel)items.push({el:carousel,label:carousel.querySelector('.art-heading').textContent.trim(),art:true});
+    const guide=panel.querySelector('.art-guide');
+    if(guide)items.push({el:guide,label:'Style Guide',art:true});
+    if(items.length)items.push({sep:true});
+    panel.querySelectorAll('.cs-text .cs-sec-title').forEach(h=>{
+      const t=h.textContent.trim();if(skip.includes(t))return;
+      items.push({el:h.closest('.cs-sec'),label:t});
+    });
+    // when a section shares its name with the live window (Rently's Prototype), keep one link: "Try the Prototype"
+    const artNames=items.filter(i=>i.art).map(i=>i.label);
+    for(let k=items.length-1;k>=0;k--){const i=items[k];if(!i.art&&!i.sep&&artNames.includes(i.label)){items.splice(k,1);items.forEach(a=>{if(a.art&&a.label===i.label)a.label='Try the '+a.label;});}}
+    items.forEach(i=>{
+      if(i.sep){const d=document.createElement('span');d.className='cs-jump-sep';d.setAttribute('aria-hidden','true');bar.appendChild(d);return;}
+      const b=document.createElement('button');b.type='button';b.textContent=i.label;
+      if(i.art)b.classList.add('cs-jump-art');
+      b._target=i.el;
+      b.addEventListener('click',e=>{
+        e.stopPropagation();setTop();
+        const go=smooth=>mp.scrollTo({top:Math.max(0,i.el.getBoundingClientRect().top+mp.scrollTop-(navBottom()+bar.offsetHeight+16)),behavior:smooth?'smooth':'auto'});
+        go(true);
+        // images loading on the way can push the section down, so check the landing spot and correct it
+        clearTimeout(bar._fix);
+        const check=n=>{bar._fix=setTimeout(()=>{const d=i.el.getBoundingClientRect().top-(navBottom()+bar.offsetHeight+16);if(Math.abs(d)>4){go(true);if(n)check(n-1);}},700);};
+        check(3);
+      });
+      bar.appendChild(b);
+    });
+    header.after(bar);
+  });
+  // highlight the link for the section currently on screen
+  let ticking=false;
+  mp.addEventListener('scroll',()=>{
+    if(ticking)return;ticking=true;
+    requestAnimationFrame(()=>{
+      ticking=false;
+      setTop();
+      const bar=document.querySelector('.cs-panel.open .cs-jump');if(!bar)return;
+      const line=navBottom()+bar.offsetHeight+40;
+      let cur=null,best=-Infinity;
+      bar.querySelectorAll('button').forEach(b=>{const t=b._target.getBoundingClientRect().top;if(t<=line&&t>best){best=t;cur=b;}});
+      bar.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b===cur));
+      if(cur){const l=cur.offsetLeft-bar.offsetLeft,r=l+cur.offsetWidth;if(l<bar.scrollLeft||r>bar.scrollLeft+bar.clientWidth)bar.scrollTo({left:l-16,behavior:'smooth'});}
+    });
+  },{passive:true});
+})();
+
+// ARTIFACT CAROUSEL: one per case study, with tabs, arrows, swipe and arrow keys
+// big files (style guides) only download once their slide is shown in an open project
+function loadSlide(sl){
+  // images and embedded sites load only when their case study is opened, which saves data on phones
+  sl.querySelectorAll('img[data-src],iframe[data-src]').forEach(im=>{im.src=im.dataset.src;im.removeAttribute('data-src');});
+}
+function artGo(c,i,user){
+  c._user=user!==false;
+  const slides=c.querySelectorAll('.art-slide'),tabs=c.querySelectorAll('.art-tab'),n=slides.length;
+  i=(i+n)%n;c._i=i;
+  c.querySelector('.art-track').style.transform='translateX(-'+i*100+'%)';
+  slides.forEach((sl,j)=>{
+    const on=j===i;
+    sl.classList.toggle('on',on);sl.inert=!on;sl.setAttribute('aria-hidden',on?'false':'true');
+    if(!on)sl.querySelectorAll('video').forEach(v=>{if(!v.paused){v._auto=true;v.pause();}});
+  });
+  // the reel starts with sound when someone opens its slide (falls back to muted if the browser blocks sound)
+  if(c._user)slides[i].querySelectorAll('video').forEach(v=>{
+    v.muted=false;
+    v.play().catch(()=>{v.muted=true;v.play().catch(()=>{});});
+  });
+  tabs.forEach((t,j)=>{t.classList.toggle('on',j===i);t.setAttribute('aria-selected',j===i?'true':'false');});
+  if(c.closest('.cs-panel.open'))loadSlide(slides[i]);
+  c.querySelector('.art-count').textContent=(i+1)+' / '+n;
+  const win=c.querySelector('.art-window'),url=c.querySelector('.art-url'),open=c.querySelector('.art-open');
+  const label=slides[i].getAttribute('aria-label')||'';
+  if(win&&url)url.textContent=win.dataset.domain+(label==='Live Site'||label==='Prototype'?'':'/'+label.toLowerCase().replace(/\s+/g,''));
+  if(open){const u=slides[i].dataset.url;open.hidden=!u;if(u)open.href=u;}
+  const bar=c.querySelector('.art-tabs'),t=tabs[i];
+  if(t)bar.scrollTo({left:t.offsetLeft-(bar.clientWidth-t.offsetWidth)/2,behavior:'smooth'});
+}
+document.querySelectorAll('.art-carousel').forEach(c=>{
+  const tabs=c.querySelectorAll('.art-tab');
+  if(tabs.length<2)c.classList.add('single');
+  tabs.forEach((t,i)=>t.addEventListener('click',()=>artGo(c,i)));
+  c.querySelector('.art-prev').addEventListener('click',()=>artGo(c,c._i-1));
+  c.querySelector('.art-next').addEventListener('click',()=>artGo(c,c._i+1));
+  const stage=c.querySelector('.art-stage');
+  let sx=0,sy=0,inner=false;
+  stage.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY;inner=!!e.target.closest('#sonder-slider');},{passive:true});
+  stage.addEventListener('touchend',e=>{
+    const dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;
+    if(Math.abs(dx)<40||Math.abs(dx)<Math.abs(dy))return;
+    const dir=dx<0?1:-1;
+    // swipes on the Sonder menu turn its pages; everywhere else they change artifact
+    if(inner)sonderSlide(dir);else artGo(c,c._i+dir);
+  },{passive:true});
+  artGo(c,0,false);
+});
+// videos play with sound when they scroll into view on the active slide, and pause when they leave
+function playWithSound(v){
+  v.muted=false;
+  v.play().catch(()=>{v.muted=true;v.play().catch(()=>{});});
+}
+const videoObs=new IntersectionObserver(entries=>entries.forEach(e=>{
+  const v=e.target,slide=v.closest('.art-slide');
+  if(e.isIntersecting){
+    if(!v._userPaused&&(!slide||slide.classList.contains('on'))&&v.closest('.cs-panel.open'))playWithSound(v);
+  }else if(!v.paused){v._auto=true;v.pause();}
+}),{threshold:.5});
+document.querySelectorAll('.art-video').forEach(v=>{
+  // a pause the visitor makes themselves sticks until they press play again
+  v.addEventListener('pause',()=>{if(!v._auto)v._userPaused=true;v._auto=false;});
+  v.addEventListener('play',()=>{v._userPaused=false;});
+  videoObs.observe(v);
+});
+// live sites and prototypes render at desktop width and scale down to fit the window
+const siteObs=new ResizeObserver(entries=>entries.forEach(e=>{
+  const box=e.target,f=box.querySelector('.art-frame'),w=box.clientWidth,h=box.clientHeight;
+  if(!f||!w||box.classList.contains('art-site-native'))return;
+  const sc=w/1440;
+  f.style.setProperty('--s',sc);
+  f.style.height=(h/sc)+'px';
+}));
+document.querySelectorAll('.art-site').forEach(b=>siteObs.observe(b));
+// some embedded sites grab focus as they load, which would swallow the arrow keys
+document.querySelectorAll('.art-frame').forEach(f=>f.addEventListener('load',()=>{
+  [0,400,1200].forEach(ms=>setTimeout(()=>{if(document.activeElement===f)f.blur();},ms));
+}));
+document.addEventListener('keydown',e=>{
+  if((e.key!=='ArrowLeft'&&e.key!=='ArrowRight')||!openSlug||document.querySelector('.lightbox'))return;
+  if(e.target.closest&&e.target.closest('input,textarea,select,video,[contenteditable]'))return;
+  const c=projPanel(openSlug).querySelector('.art-carousel');
+  if(!c||c.classList.contains('single'))return;
+  e.preventDefault();
+  artGo(c,c._i+(e.key==='ArrowRight'?1:-1));
+});
+
+function openSvcs(){scrollMP('svcs');}
+function goHome(){
+  closeAllModals();
+  closeProject(true);
+  document.getElementById('mp').scrollTo({top:0,behavior:'smooth'});
+}
+function scrollMP(id){
+  closeAllModals();
+  const mp=document.getElementById('mp');
+  if(!mp)return;
+  const el=document.getElementById(id);
+  if(!el)return;
+  const navH=80;
+  const target=mp.scrollTop+el.getBoundingClientRect().top-mp.getBoundingClientRect().top-navH-16;
+  mp.scrollTo({top:Math.max(0,target),behavior:'smooth'});
+}
+
+// MOBILE MENU
+function toggleMobileMenu(){
+  const btn=document.getElementById('hamburger');
+  const menu=document.getElementById('mobile-menu');
+  btn.classList.toggle('open');
+  menu.classList.toggle('open');
+}
+function closeMobileMenu(){
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('mobile-menu').classList.remove('open');
+}
+
+// THEME TOGGLE
+function toggleTheme(){
+  const isLight=document.body.classList.toggle('light');
+  const btn=document.getElementById('theme-btn');
+  const mmBtn=document.getElementById('mm-theme-btn');
+  if(btn) btn.textContent=isLight?'☽ Dark':'☀ Light';
+  if(mmBtn) mmBtn.textContent=isLight?'☽ Dark Mode':'☀ Light Mode';
+  localStorage.setItem('theme',isLight?'light':'dark');
+}
+(function(){
+  const saved=localStorage.getItem('theme');
+  if(saved==='light'){
+    document.body.classList.add('light');
+    const btn=document.getElementById('theme-btn');
+    const mmBtn=document.getElementById('mm-theme-btn');
+    if(btn) btn.textContent='☽ Dark';
+    if(mmBtn) mmBtn.textContent='☽ Dark Mode';
+  }
+})();
+
+// SCROLL PROGRESS BAR
+const progressBar=document.getElementById('scroll-progress');
+const mp=document.getElementById('mp');
+if(mp&&progressBar){
+  mp.addEventListener('scroll',function(){
+    const scrolled=mp.scrollTop;
+    const total=mp.scrollHeight-mp.clientHeight;
+    const pct=total>0?(scrolled/total)*100:0;
+    progressBar.style.width=pct+'%';
+  });
+}
+
+// PARALLAX ON HERO NOISE
+const heroNoise=document.querySelector('.hero-noise');
+if(mp&&heroNoise){
+  mp.addEventListener('scroll',function(){
+    const y=mp.scrollTop;
+    heroNoise.style.transform='translateY('+y*.25+'px)';
+  });
+}
+
+// REVEAL ON SCROLL
+const revealObs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+      revealObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal-up,.reveal-left,.reveal-right,.reveal-scale').forEach(function(el){
+  revealObs.observe(el);
+});
+
+// STAGGERED PC GRID CARDS
+const cardObs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0) scale(1)';
+      cardObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.06});
+document.querySelectorAll('.pc,.scard-lg').forEach(function(el,i){
+  el.style.opacity='0';
+  el.style.transform='translateY(30px) scale(.97)';
+  el.style.transition='opacity .7s cubic-bezier(.16,1,.3,1) '+(i*0.07)+'s,transform .7s cubic-bezier(.16,1,.3,1) '+(i*0.07)+'s';
+  cardObs.observe(el);
+});
+
+
+
+const isLow=matchMedia('(max-width:780px)').matches||(navigator.hardwareConcurrency&&navigator.hardwareConcurrency<=4);
+const prefRed=matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(isLow||prefRed){
+  document.querySelectorAll('.site-bg video,.svcs-page-bg video').forEach(v=>{v.pause();v.removeAttribute('src');v.load();v.style.display='none';});
+}
+
+// LIGHTBOX
+function openLightbox(src,alt){
+  var lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<button class="lightbox-close">&#215;</button><img src="'+src+'" alt="'+(alt||'')+'">';
+  // tall images such as style guides open at reading width and scroll, instead of shrinking to fit the screen
+  var im=lb.querySelector('img');
+  function tall(){if(im.naturalHeight>im.naturalWidth*1.4)lb.classList.add('tall');}
+  if(im.complete)tall();else im.addEventListener('load',tall);
+  // clicking anywhere, including the image itself, closes it
+  lb.addEventListener('click',function(){ lb.remove(); });
+  document.body.appendChild(lb);
+}
+document.querySelectorAll('.zoom-img-wrap').forEach(function(wrap){
+  wrap.addEventListener('click',function(){
+    var img=wrap.querySelector('img');
+    if(img) openLightbox(img.src,img.alt);
+  });
+});
+
+// SONDER MENU SLIDER
+var sonderIdx=0;
+var sonderTotal=5;
+function sonderSlide(dir){
+  sonderIdx=(sonderIdx+dir+sonderTotal)%sonderTotal;
+  sonderUpdate();
+}
+function sonderGoto(i){
+  sonderIdx=i;
+  sonderUpdate();
+}
+function sonderUpdate(){
+  var slides=document.getElementById('sonder-slides');
+  if(slides) slides.style.transform='translateX(-'+sonderIdx+'00%)';
+  var dots=document.querySelectorAll('#sonder-dots span');
+  dots.forEach(function(d,i){
+    d.style.background=i===sonderIdx?'#c4501a':'rgba(255,255,255,.3)';
+  });
+}
+
+// DEEP LINK: mycreativeways.com/#sonder skips ENTER, opens the project and scrolls to it
+(function(){
+  const slug=projectFromHash();
+  if(!slug)return;
+  if('scrollRestoration' in history)history.scrollRestoration='manual';
+  enterSite._done=true;
+  document.getElementById('ep').style.display='none';
+  mp.classList.remove('gone');
+  openProject(slug,{history:false,scroll:false});
+  document.addEventListener('DOMContentLoaded',()=>setTimeout(()=>{if(openSlug===slug)scrollToProject(slug,true);},600));
+  // images can shift the layout while loading and the browser jumps to the #id itself, so line up again after load
+  window.addEventListener('load',()=>setTimeout(()=>{if(openSlug===slug)scrollToProject(slug,true);},650));
+})();
+
+
+</script>
+</body>
+</html>
