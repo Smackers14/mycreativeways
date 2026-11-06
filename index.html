@@ -123,6 +123,7 @@ section{padding:5rem 3rem;border-top:1px solid rgba(255,255,255,.12);}
 .pgrid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:auto;gap:6px;}
 .pc{position:relative;overflow:hidden;cursor:pointer;background:#1a1a2e;border-radius:var(--soft-radius);transition:opacity .3s,transform .3s;box-shadow:0 24px 70px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.28);}
 .pc:hover{transform:scale(1.01);}
+.pc:focus-visible,.nlogo:focus-visible{outline:2px solid #fff;outline-offset:4px;}
 .pc-label{position:absolute;bottom:0;left:0;right:0;padding:1rem 1.25rem;background:rgba(255,255,255,.18);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-top:1px solid rgba(255,255,255,.32);border-radius:0 0 var(--soft-radius) var(--soft-radius);transition:transform .3s;}
 .pc:hover .pc-label{transform:translateY(2px);}
 .pc-cat{font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:.2rem;}
@@ -1815,6 +1816,14 @@ document.addEventListener('DOMContentLoaded',()=>{ const d=document.querySelecto
 
 // PROJECT PANELS: each card (#rently, #sonder…) opens its case study below its row
 const projCards=[...document.querySelectorAll('.pgrid>.pc')];
+// KEYBOARD ACCESS: cards and logo open with Tab then Enter or Space
+document.querySelectorAll('.pgrid>.pc, .nlogo').forEach(function(el){
+  el.setAttribute('tabindex','0');
+  el.setAttribute('role','button');
+  el.addEventListener('keydown',function(e){
+    if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click();}
+  });
+});
 projCards.forEach((c,i)=>c.style.order=i*2);
 let openSlug=null;
 function projPanel(slug){
