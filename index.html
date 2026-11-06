@@ -2181,7 +2181,13 @@ document.querySelectorAll('.pc,.scard-lg').forEach(function(el,i){
 const isLow=matchMedia('(max-width:780px)').matches||(navigator.hardwareConcurrency&&navigator.hardwareConcurrency<=4);
 const prefRed=matchMedia('(prefers-reduced-motion:reduce)').matches;
 if(isLow||prefRed){
-  document.querySelectorAll('.site-bg video,.svcs-page-bg video').forEach(v=>{v.pause();v.removeAttribute('src');v.load();v.style.display='none';});
+  document.querySelectorAll('.site-bg video,.svcs-page-bg video').forEach(function(v){
+    v.pause();
+    v.removeAttribute('autoplay');
+    v.querySelectorAll('source').forEach(function(s){s.remove();});
+    v.load();
+    v.style.display='none';
+  });
 }
 
 // LIGHTBOX
