@@ -320,10 +320,6 @@ footer{padding:1.25rem 3rem;border-top:.5px solid rgba(255,255,255,.12);display:
 .scard-lg .sc-tag{font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;padding:.25rem .6rem;border:1px solid var(--border);border-radius:99px;color:var(--muted);}
 .svcs-cta{text-align:center;padding:3rem 0 1rem;}
 .svcs-cta-text{font-family:'Raleway',sans-serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:300;color:#fff;margin-bottom:1.5rem;line-height:1.3;}
-@keyframes vinylSpin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
-#vinyl-player{position:fixed;bottom:2rem;right:2rem;z-index:8888;display:none;flex-direction:column;align-items:center;}
-#vinyl-disc{width:140px;height:140px;animation:vinylSpin 5s linear infinite;cursor:pointer;display:flex;align-items:center;justify-content:center;}
-#vinyl-disc img{width:140px;height:140px;object-fit:contain;display:block;filter:drop-shadow(0 8px 24px rgba(0,0,0,.7));}
 .zoom-img-wrap{border-radius:12px;cursor:pointer;position:relative;overflow:hidden;}
 .zoom-img{width:100%;display:block;transition:opacity .2s;}
 .zoom-img-wrap:hover .zoom-img{opacity:.8;}
@@ -398,24 +394,7 @@ footer{padding:1.25rem 3rem;border-top:.5px solid rgba(255,255,255,.12);display:
   .reveal-left,.reveal-right{transform:translateY(30px);}
 }
 @media(max-width:480px){
-  .hero-h1{font-size:.58rem;letter-spacing:.22em;}
-  .shd h2{font-size:1.4rem;}
-  .ch2{font-size:1.4rem;}
-  .hero-right{height:200px;}
-  .cs-title{font-size:1.25rem;}
-  .hm-grid{grid-template-columns:1fr;}
-  .proto-wrap>div>iframe,.proto-wrap iframe{height:360px!important;}
-}
-@media(max-width:480px){
-  .hero-h1{font-size:.9rem;}
   .shd h2{font-size:1.6rem;}
-  .ch2{font-size:1.6rem;}
-  .hero-right{height:260px;}
-  .hm-grid{grid-template-columns:1fr;}
-  .cs-title{font-size:1.5rem;}
-  .proto-shell iframe{width:260px!important;height:563px!important;}
-  .proto-wrap iframe{height:420px!important;}
-  .enter-title{font-size:1.8rem;}
 }
 /* LIGHT MODE */
 body.light{
@@ -1754,7 +1733,6 @@ body.light .theme-toggle:hover{background:rgba(0,0,0,.15);}
 
 </div>
 
-<!-- VINYL PLACEHOLDER - music coming soon -->
 
 <script>
 const isTouch=matchMedia('(pointer:coarse)').matches;
@@ -1797,8 +1775,6 @@ function enterSite(){
       requestAnimationFrame(()=>{
         mp.style.transition='opacity 0.7s ease';
         mp.style.opacity='1';
-        const vp=document.getElementById('vinyl-player');
-        if(vp)vp.style.display='flex';
       });
     });
   },900);
@@ -2026,14 +2002,13 @@ document.querySelectorAll('.art-carousel').forEach(c=>{
   c.querySelector('.art-prev').addEventListener('click',()=>artGo(c,c._i-1));
   c.querySelector('.art-next').addEventListener('click',()=>artGo(c,c._i+1));
   const stage=c.querySelector('.art-stage');
-  let sx=0,sy=0,inner=false;
-  stage.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY;inner=!!e.target.closest('#sonder-slider');},{passive:true});
+  let sx=0,sy=0;
+  stage.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
   stage.addEventListener('touchend',e=>{
     const dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;
     if(Math.abs(dx)<40||Math.abs(dx)<Math.abs(dy))return;
     const dir=dx<0?1:-1;
-    // swipes on the Sonder menu turn its pages; everywhere else they change artifact
-    if(inner)sonderSlide(dir);else artGo(c,c._i+dir);
+    artGo(c,c._i+dir);
   },{passive:true});
   artGo(c,0,false);
 });
@@ -2209,26 +2184,6 @@ document.querySelectorAll('.zoom-img-wrap').forEach(function(wrap){
     if(img) openLightbox(img.src,img.alt);
   });
 });
-
-// SONDER MENU SLIDER
-var sonderIdx=0;
-var sonderTotal=5;
-function sonderSlide(dir){
-  sonderIdx=(sonderIdx+dir+sonderTotal)%sonderTotal;
-  sonderUpdate();
-}
-function sonderGoto(i){
-  sonderIdx=i;
-  sonderUpdate();
-}
-function sonderUpdate(){
-  var slides=document.getElementById('sonder-slides');
-  if(slides) slides.style.transform='translateX(-'+sonderIdx+'00%)';
-  var dots=document.querySelectorAll('#sonder-dots span');
-  dots.forEach(function(d,i){
-    d.style.background=i===sonderIdx?'#c4501a':'rgba(255,255,255,.3)';
-  });
-}
 
 // DEEP LINK: mycreativeways.com/#sonder skips ENTER, opens the project and scrolls to it
 (function(){
